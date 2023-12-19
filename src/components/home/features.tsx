@@ -12,26 +12,26 @@ import img3 from "../../assets/images/op-witte.png";
 interface featuresType {
   img: string;
   name: string;
-  descritpion: string;
+  description: string;
 }
 const Features = () => {
   const FeaturesListLeft: featuresType[] = [
     {
       img: img_1,
       name: "Inpak-gegevens direct op het VVB verzendlabel!",
-      descritpion:
-        " Alle informatie die jij wilt al gelijk op het verzendlabel! Zeg maar dag tegen picklijsten of handmatig opschrijven. Jouw productcode, aantal, interne referentie, verzendzak of andere instructies direct op het verzendlabel; het kan allemaal!",
+      description:
+        "Alle informatie die jij wilt al gelijk op het verzendlabel! Zeg maar dag tegen picklijsten of handmatig opschrijven. Jouw productcode, aantal, interne referentie, verzendzak of andere instructies direct op het verzendlabel; het kan allemaal!",
     },
     {
       img: img_2,
       name: "Inzicht welke VVB-orders bij een Parcelshop liggen, stilstaan, of teruggestuurd zijn door je vervoerder",
-      descritpion:
+      description:
         "Wil je graag weten welke pakketten van je VVB-orders bij een parcelshop liggen en niet zijn afgehaald, of wellicht problemen hebben, of simpelweg retour worden gestuurd omdat er iets mis is met het pakket? Zo krijg je inzicht in al je VVB-orders.",
     },
     {
       img: img_3,
       name: "Houdt rekening met de gewenste levertijd van de klant",
-      descritpion:
+      description:
         "Sorteert jouw verzendlabels op basis van jouw productreferentie en maakt hier 1 pdf van. Dit maakt het inpakken een stuk makkelijker. Dit terwijl het wel rekening houdt met de gewenste leverdag van de klant!",
     },
   ];
@@ -40,25 +40,25 @@ const Features = () => {
     {
       img: img_4,
       name: "Stel zelf automatisch in: brievenbus of pakket",
-      descritpion:
+      description:
         " Van te voren zelf ingesteld instelling welk EAN als pakket of als brievenbus moet verzonden worden. Twee of meer items in een bestelling, ook dit kan je gemakkelijk aangeven!",
     },
     {
       img: img_5,
       name: "Genereer één totale paklijst",
-      descritpion:
+      description:
         "Een paklijst met de totaal aantallen van je producten welke je vandaag moet verzenden.",
     },
     {
       img: img_6,
       name: "Maakt automatisch de labels aan en verzend ze naar je email",
-      descritpion:
+      description:
         "Staat jouw pakkettype altijd goed of heb je het via onze verzendregels ingericht? Dan kun je er ook voor kiezen om het automatisch je paklijst + VVB verzendlabels te laten e-mailen naar je. Handig als jij nog orders aan het inpakken bent bijvoorbeeld!",
     },
   ];
   return (
     <>
-      <section id="features" >
+      <section id="features">
         <img
           src={img3}
           alt=""
@@ -72,11 +72,11 @@ const Features = () => {
       <section className="w-[90%]  2xl:w-[50%] mx-auto pt-16 sm:px-2">
         {FeaturesListLeft.map((item, index) => {
           return (
-            <div className=" shadow_drop mb-16 px-6  relative  rounded-[10px]  py-6">
-              <div
-                key={index}
-                className="grid  sm:space-x-6   grid-cols-12  items-center"
-              >
+            <div
+              key={index}
+              className=" shadow_drop mb-16 px-6  relative  rounded-[10px]  py-6"
+            >
+              <div className="grid  sm:space-x-6   grid-cols-12  items-center">
                 <div className="lg:col-span-2 col-span-12">
                   <img
                     src={item.img}
@@ -92,7 +92,7 @@ const Features = () => {
                     {item.name}
                   </h2>
                   <p className="mt-2 text-[12px] md:text-[18px] xl:text-[22px] text-center lg:text-left   font-NunitoMedium">
-                    {item.descritpion}
+                    {item.description}
                   </p>
                 </div>
               </div>
@@ -104,17 +104,17 @@ const Features = () => {
       <section className="w-[90%] 2xl:w-[50%] mx-auto pb-16">
         {FeaturesListRight.map((item, index) => {
           return (
-            <div className=" shadow_drop mb-16 pr-4 pl-10    relative  rounded-[10px] ">
-              <div
-                key={index}
-                className="grid    py-2 grid-cols-12   items-center"
-              >
+            <div
+              key={index}
+              className=" shadow_drop mb-16 pr-4 pl-10    relative  rounded-[10px] "
+            >
+              <div className="grid    py-2 grid-cols-12   items-center">
                 <div className="lg:col-span-10  lg:pr-10 lg:order-1 order-2 col-span-12">
                   <h2 className="text-[16px] md:text-[24px]  xl:text-[30px] text-center lg:text-left  font-NunitoBold md:leading-10">
                     {item.name}
                   </h2>
                   <p className="mt-2 text-[12px] md:text-[18px] xl:text-[22px] text-center lg:text-left   font-NunitoMedium">
-                    {item.descritpion}
+                    {item.description}
                   </p>
                 </div>
                 <div className="lg:col-span-2 lg:order-2 order-1 col-span-12">

@@ -1,8 +1,12 @@
 import Group_51 from "../../assets/images/Group_51.png";
 import check_blue from "../../assets/images/check_blue.svg";
 import check_white from "../../assets/images/check_white.svg";
+import useRedirect from "../../helpers/useNavigate";
+import { REGISTER } from "../../helpers/AppPaths";
 
 const Pricing = () => {
+  const redirect = useRedirect();
+
   return (
     <section id="pricing" className="py-10 md:py-[80px]  bg-[#C9E3FF]">
       <div className="2xl:w-[50%] xl:w-[75%] lg:w-[80%] w-[90%] mx-auto">
@@ -27,7 +31,7 @@ const Pricing = () => {
               </h2>
               <div>
                 <p className="text-[10px] p-0 pl-2 leading-none md:text-[10px] font-NunitoBold sm:mt-3">
-                 Ex. BTW
+                  Ex. BTW
                 </p>
                 <p className="text-[18px] font-NunitoExtraBold p-0 md:text-[15px] ">
                   / maand
@@ -48,7 +52,10 @@ const Pricing = () => {
               </>
             </ul>
             <center>
-              <button className=" btn_hero rounded-[50px] px-8 py-2 font-NunitoRegular text-[16px] text-white">
+              <button
+                onClick={() => redirect(REGISTER)}
+                className=" btn_hero rounded-[50px] px-8 py-2 font-NunitoRegular text-[16px] text-white"
+              >
                 Klik hier
               </button>
             </center>
@@ -65,7 +72,7 @@ const Pricing = () => {
               </h2>
               <div>
                 <p className="text-[10px] text-white  p-0 pl-2 leading-none md:text-[10px] font-NunitoBold sm:mt-3">
-                 Ex. BTW
+                  Ex. BTW
                 </p>
                 <p className="text-[18px] text-white  font-NunitoExtraBold p-0 md:text-[15px] ">
                   / maand
@@ -86,7 +93,10 @@ const Pricing = () => {
               </>
             </ul>
             <center>
-              <button className=" bg-[#fff] text-[#000000] rounded-[50px] px-8 py-2 font-NunitoMedium text-[16px] ">
+              <button
+                onClick={() => redirect(REGISTER)}
+                className=" bg-[#fff] text-[#000000] rounded-[50px] px-8 py-2 font-NunitoMedium text-[16px] "
+              >
                 Klik hier
               </button>
             </center>
@@ -103,14 +113,12 @@ const Pricing = () => {
               </h2>
               <div>
                 <p className="text-[10px]   p-0 pl-2 leading-none md:text-[10px] font-NunitoBold sm:mt-3">
-                 Ex. BTW
+                  Ex. BTW
                 </p>
                 <p className="text-[18px]  font-NunitoExtraBold p-0 md:text-[15px] ">
                   / maand
                 </p>
               </div>
-             
-              
             </div>
             <ul className="max-w-md space-y-1 px-2 py-6">
               <>
@@ -127,7 +135,10 @@ const Pricing = () => {
               </>
             </ul>
             <center>
-              <button className=" btn_hero rounded-[50px] px-8 py-2 font-NunitoRegular text-[16px] text-white">
+              <button
+                onClick={() => redirect(REGISTER)}
+                className=" btn_hero rounded-[50px] px-8 py-2 font-NunitoRegular text-[16px] text-white"
+              >
                 Klik hier
               </button>
             </center>

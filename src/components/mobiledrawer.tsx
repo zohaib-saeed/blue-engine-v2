@@ -16,9 +16,9 @@ const MobileDrawer = () => {
           className="w-8 h-8"
         >
           <path
-            fill-rule="evenodd"
+            fillRule="evenodd"
             d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-            clip-rule="evenodd"
+            clipRule="evenodd"
           />
         </svg>
       </div>
@@ -85,18 +85,30 @@ const MobileDrawer = () => {
                       </div>
                     </Transition.Child>
                     <div className=" flex h-full flex-col   overflow-y-scroll bg-[#fff] py-3 shadow-xl">
-                        <img src={Logo} className="w-[76px] ml-6 pb-10" alt="" />
-                      
+                      <img src={Logo} className="w-[76px] ml-6 pb-10" alt="" />
+
                       <ul className="flex flex-col text-[#000000] font-NunitoRegular text-[16px] ml-6 ">
-                        <a href="#hero" >Home</a>
-                        <a href="#features" className="mt-1">Features</a>
-                        <a href="#pricing" className="mt-1">Pricing</a>
-                        <a href="#faq" className="mt-1">FAQ</a>
-                        <a href="#resource" className="mt-1">Resource</a>
-                        <a href="#support" className="mt-1">Support</a>
+                        <a href="#hero">Home</a>
+                        <a href="#features" className="mt-1">
+                          Features
+                        </a>
+                        <a href="#pricing" className="mt-1">
+                          Pricing
+                        </a>
+                        <a href="#faq" className="mt-1">
+                          FAQ
+                        </a>
+                        <a href="#resource" className="mt-1">
+                          Resource
+                        </a>
+                        <a href="#support" className="mt-1">
+                          Support
+                        </a>
                       </ul>
                       <div className="w-[90%] mx-auto ">
-                      <button className="bg-[#238CFF] my-5 w-full font-NunitoRegular text-[16px] text-[#ffffff] py-2 font-bold rounded-[50px]">Sign Up</button>
+                        <button className="bg-[#238CFF] my-5 w-full font-NunitoRegular text-[16px] text-[#ffffff] py-2 font-bold rounded-[50px]">
+                          Sign Up
+                        </button>
                       </div>
                     </div>
                   </Dialog.Panel>
