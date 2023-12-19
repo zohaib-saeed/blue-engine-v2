@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Nunito">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/assets/fonts/Nunito.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
