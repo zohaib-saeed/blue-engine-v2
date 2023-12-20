@@ -11,6 +11,8 @@ services:
       - NGINX_HOST=${NGINX_HOST}
       - NGINX_PORT=${NGINX_PORT}
     volumes:
+      - .:/app
+      - /app/node_modules
       - certbot-etc:/etc/letsencrypt
       - certbot-var:/var/lib/letsencrypt
       - certbot-challenge:/var/www/html
@@ -30,6 +32,7 @@ services:
     depends_on:
       - web
     entrypoint: "/init-letsencrypt.sh"
+
 
 volumes:
   certbot-etc:
