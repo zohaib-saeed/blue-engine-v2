@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT}:${NGINX_PORT}"
+      - "443:443"
+    environment:
+      - NGINX_HOST=${NGINX_HOST}
+      - NGINX_PORT=${NGINX_PORT}
+    volumes:
+      - certbot-etc:/etc/letsencrypt
+      - certbot-var:/var/lib/letsencrypt
+      - certbot-challenge:/var/www/html
+    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+
+  certbot:
+    build:
+      context: ./certbot
+      dockerfile: Dockerfile
+    volumes:
+      - certbot-etc:/etc/letsencrypt
+      - certbot-var:/var/lib/letsencrypt
+      - certbot-challenge:/var/www/html
+    environment:
+      - CERTBOT_DOMAIN=${CERTBOT_DOMAIN}
+      - CERTBOT_EMAIL=${CERTBOT_EMAIL}
+    depends_on:
+      - web
+    entrypoint: "/init-letsencrypt.sh"
+
+volumes:
+  certbot-etc:
+  certbot-var:
+  certbot-challenge:
+
