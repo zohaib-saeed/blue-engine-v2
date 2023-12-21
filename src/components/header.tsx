@@ -29,7 +29,7 @@ const Header = () => {
           <ul className="max-w-md flex space-x-4 float-right	 space-y-1 text-gray-500 list-inside dark:text-gray-400">
             <li
               onClick={() => redirect(LOGIN)}
-              className="flex gap-1 text-[#000000] text-[14px] items-center font-NunitoMedium pt-0"
+              className="flex cursor-pointer gap-1 text-[#000000] text-[14px] items-center font-NunitoMedium pt-0"
             >
               Login
               <img src={user} alt="" />
