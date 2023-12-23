@@ -23,7 +23,7 @@ http {
 
     server {
         listen              443 ssl;
-        server_name         ${NGINX_HOST};  # Modified to use variable
+        server_name         ${CERTBOT_DOMAIN};  # Modified to use variable
         ssl_certificate     /etc/letsencrypt/live/${CERTBOT_DOMAIN}/fullchain.pem;  # Assume certs are named after host
         ssl_certificate_key /etc/letsencrypt/live/${CERTBOT_DOMAIN}/privkey.pem;  # Assume certs are named after host
 
