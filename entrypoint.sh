@@ -6,3 +6,5 @@ envsubst '$CERTBOT_DOMAIN' < /etc/nginx/templates/nginx.conf.template > /etc/ngi
 
 echo "envsubst completed. Ready for starting Nginx..."
 # Don't start Nginx here; just prepare the configuration.
+
+exec "$@"

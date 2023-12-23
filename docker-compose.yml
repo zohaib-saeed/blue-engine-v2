@@ -16,8 +16,7 @@ services:
       - certbot-var:/var/lib/letsencrypt
       - certbot-challenge:/var/www/html
     entrypoint: ["/entrypoint.sh"]
-    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
-
+    command: ["/bin/sh", "-c", "while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g 'daemon off;'"]
 
   certbot:
     build:
