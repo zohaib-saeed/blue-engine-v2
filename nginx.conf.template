@@ -8,7 +8,7 @@ http {
 
     server {
         listen       80;
-        server_name  ${NGINX_HOST};  # Modified to use variable
+        server_name  ${CERTBOT_DOMAIN};  # Modified to use variable
 
         location / {
             return 301 https://$host$request_uri;
@@ -24,8 +24,8 @@ http {
     server {
         listen              443 ssl;
         server_name         ${NGINX_HOST};  # Modified to use variable
-        ssl_certificate     /etc/letsencrypt/live/${NGINX_HOST}/fullchain.pem;  # Assume certs are named after host
-        ssl_certificate_key /etc/letsencrypt/live/${NGINX_HOST}/privkey.pem;  # Assume certs are named after host
+        ssl_certificate     /etc/letsencrypt/live/${CERTBOT_DOMAIN}/fullchain.pem;  # Assume certs are named after host
+        ssl_certificate_key /etc/letsencrypt/live/${CERTBOT_DOMAIN}/privkey.pem;  # Assume certs are named after host
 
         location / {
             root   /usr/share/nginx/html;

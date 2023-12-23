@@ -10,6 +10,7 @@ services:
     environment:
       - NGINX_HOST=${NGINX_HOST}
       - NGINX_PORT=${NGINX_PORT}
+      - CERTBOT_DOMAIN=${CERTBOT_DOMAIN}
     volumes:
       - certbot-etc:/etc/letsencrypt
       - certbot-var:/var/lib/letsencrypt
