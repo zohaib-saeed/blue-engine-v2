@@ -4,9 +4,9 @@ import img_3 from "../../assets/images/Feature3 1.png";
 import img_4 from "../../assets/images/feature4 1.png";
 import img_5 from "../../assets/images/f1 (6) 1.png";
 import img_6 from "../../assets/images/Feature6 1.png";
-import img_7 from "../../assets/images/feature-7.png";
-import img_8 from "../../assets/images/feature-8.png";
-import img_9 from "../../assets/images/feature-9.png";
+//import img_7 from "../../assets/images/feature-7.png";
+//import img_8 from "../../assets/images/feature-8.png";
+//import img_9 from "../../assets/images/feature-9.png";
 import img3 from "../../assets/images/op-witte.png";
 
 interface featuresType {
@@ -135,35 +135,35 @@ const Features = () => {
         </div>
       </section>
 
-      <section className="w-[90%] xl:w-[85%] 2xl:w-[50%] mx-auto   gap-5 grid grid-cols-1 md:grid-cols-3 py-10 lg:py-36">
-        <div>
-          <img src={img_8} alt="" className="w-[60%] mx-auto" />
-          <h2 className="font-NunitoExtraBold leading-6 lg:leading-10 pt-5 lg:pt-14  text-center text-[30px] md:text-[35px] lg:text-[50px] xl:text-[55px] ">
-            3X
-          </h2>
-          <p className="font-NunitoExtraBold text-center text-[20px] md:text-[25px] lg:text-[30px] xl:text-[35px] ">
-            Efficient
-          </p>
-        </div>
-        <div className="mt-10 md:mt-0">
-          <img src={img_7} alt="" className="w-[60%] mx-auto" />
-          <h2 className="font-NunitoExtraBold leading-6 lg:leading-10 pt-5 lg:pt-14  text-center text-[30px] md:text-[35px] lg:text-[50px] xl:text-[55px] ">
-            -78%
-          </h2>
-          <p className="font-NunitoExtraBold text-center text-[20px] md:text-[25px] lg:text-[30px] xl:text-[35px] ">
-            Inpakfouten
-          </p>
-        </div>
-        <div className="mt-10 md:mt-0">
-          <img src={img_9} alt="" className="w-[60%] mx-auto" />
-          <h2 className="font-NunitoExtraBold leading-6 lg:leading-10 pt-5 lg:pt-14  text-center text-[30px] md:text-[35px] lg:text-[50px] xl:text-[55px] ">
-            -9%
-          </h2>
-          <p className="font-NunitoExtraBold text-center text-[20px] md:text-[25px] lg:text-[30px] xl:text-[35px] ">
-            Retouren
-          </p>
-        </div>
-      </section>
+      {/*<section className="w-[90%] xl:w-[85%] 2xl:w-[50%] mx-auto   gap-5 grid grid-cols-1 md:grid-cols-3 py-10 lg:py-36">*/}
+      {/*  <div>*/}
+      {/*    <img src={img_8} alt="" className="w-[60%] mx-auto" />*/}
+      {/*    <h2 className="font-NunitoExtraBold leading-6 lg:leading-10 pt-5 lg:pt-14  text-center text-[30px] md:text-[35px] lg:text-[50px] xl:text-[55px] ">*/}
+      {/*      3X*/}
+      {/*    </h2>*/}
+      {/*    <p className="font-NunitoExtraBold text-center text-[20px] md:text-[25px] lg:text-[30px] xl:text-[35px] ">*/}
+      {/*      Efficient*/}
+      {/*    </p>*/}
+      {/*  </div>*/}
+      {/*  <div className="mt-10 md:mt-0">*/}
+      {/*    <img src={img_7} alt="" className="w-[60%] mx-auto" />*/}
+      {/*    <h2 className="font-NunitoExtraBold leading-6 lg:leading-10 pt-5 lg:pt-14  text-center text-[30px] md:text-[35px] lg:text-[50px] xl:text-[55px] ">*/}
+      {/*      -78%*/}
+      {/*    </h2>*/}
+      {/*    <p className="font-NunitoExtraBold text-center text-[20px] md:text-[25px] lg:text-[30px] xl:text-[35px] ">*/}
+      {/*      Inpakfouten*/}
+      {/*    </p>*/}
+      {/*  </div>*/}
+      {/*  <div className="mt-10 md:mt-0">*/}
+      {/*    <img src={img_9} alt="" className="w-[60%] mx-auto" />*/}
+      {/*    <h2 className="font-NunitoExtraBold leading-6 lg:leading-10 pt-5 lg:pt-14  text-center text-[30px] md:text-[35px] lg:text-[50px] xl:text-[55px] ">*/}
+      {/*      -9%*/}
+      {/*    </h2>*/}
+      {/*    <p className="font-NunitoExtraBold text-center text-[20px] md:text-[25px] lg:text-[30px] xl:text-[35px] ">*/}
+      {/*      Retouren*/}
+      {/*    </p>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
     </>
   );
 };
