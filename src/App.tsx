@@ -1,14 +1,18 @@
-import "./App.css";
 import Header from "./components/header";
 import Home from "./pages/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
-function App() {
+const App = () => {
   return (
-    <>
+    <Router>
       <Header />
-      <Home />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/return-app-privacy" element={<PrivacyPolicy />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
