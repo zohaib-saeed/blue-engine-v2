@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="grid grid-cols-2 items-center pb-12  py-4 mx-auto 2xl:w-[50%] w-[90%]">
         <div className="flex gap-4 items-center">
           <h2 className="md:text-[48px] text-2xl font-NunitoExtraBold text-white">
-            Sync8
+            BlueEngine
           </h2>
           <img src={logo} alt="" className="sm:w-[80px] w-[50px] " />
         </div>
@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
             <div className="col-span-10">
               <h2 className="font-NunitoExtraBold  lg:text-[22px] sm:text-[18px] text-[16px]  text-white sm:pb-5 pb-1">
-                Info@sync8.nl
+                info@blueengine.nl
               </h2>
             </div>
           </div>

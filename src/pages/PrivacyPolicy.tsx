@@ -117,7 +117,7 @@ function PrivacyPolicy() {
         Als je vragen of opmerkingen hebt over deze privacyverklaring, neem dan
         contact met ons op via:
       </p>
-      <p className="mb-4">E-mail: info@sync8.nl</p>
+      <p className="mb-4">E-mail: info@blueengine.nl</p>
       <p>Adres: Meerlandenweg 65B, 1187ZR, Amstelveen</p>
     </div>
   );
