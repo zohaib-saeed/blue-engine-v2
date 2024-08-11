@@ -6,7 +6,7 @@ function PrivacyPolicy() {
       <h2 className="text-2xl font-bold mb-4">
         Privacyverklaring voor BlueEngine Returnscanner
       </h2>
-      <h4 className="text-lg mb-4">Laatste bijgewerkt: 18-6-2024</h4>
+      <h4 className="text-lg mb-4">Laatst bijgewerkt: 11-08-2024</h4>
       <p className="mb-4">
         BlueEngine ("wij", "ons" of "onze") respecteert jouw privacy en zet zich
         in om jouw persoonlijke gegevens te beschermen. Deze privacyverklaring
