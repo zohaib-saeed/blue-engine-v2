@@ -22,6 +22,7 @@
     "@mantine/carousel": "7.11.2",
     "@mantine/core": "7.11.2",
     "@mantine/hooks": "7.11.2",
+    "@types/node": "^22.5.0",
     "clsx": "^2.1.1",
     "embla-carousel-autoplay": "^8.1.8",
     "embla-carousel-react": "8.1.8",
