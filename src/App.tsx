@@ -1,18 +1,15 @@
-import Header from "./components/header";
-import Home from "./pages/Home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
+import '@mantine/core/styles.css';
+import '@mantine/carousel/styles.css';
+import { MantineProvider } from '@mantine/core';
+import { Router } from './Router';
+import { theme } from './theme';
+import './index.css';
+import './styles/mantine.styles.css';
 
-const App = () => {
+export default function App() {
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/return-app-privacy" element={<PrivacyPolicy />} />
-      </Routes>
-    </Router>
+    <MantineProvider theme={theme}>
+      <Router />
+    </MantineProvider>
   );
-};
-
-export default App;
+}

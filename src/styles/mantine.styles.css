@@ -1,0 +1,3 @@
+.homepage-Timeline .mantine-Timeline-item::before {
+  bottom: calc(var(--mantine-spacing-sm) * -1) !important;
+}
