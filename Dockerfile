@@ -15,7 +15,7 @@ RUN pnpm install
 COPY . .
 
 # Build the app
-RUN pnpm run build
+RUN pnpm build
 
 # Step 2: Serve the app using Nginx
 FROM nginx:stable-alpine as production-stage
@@ -24,7 +24,7 @@ FROM nginx:stable-alpine as production-stage
 RUN apk add --no-cache gettext
 
 # Copy the built app to nginx html directory
-COPY --from=build-stage /app/build /usr/share/nginx/html
+COPY --from=build-stage /app/dist /usr/share/nginx/html
 
 # Copy the custom nginx.conf template
 COPY nginx.conf.template /etc/nginx/templates/nginx.conf.template
