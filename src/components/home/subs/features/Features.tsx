@@ -1,6 +1,6 @@
-import ProposedActions from "./subs/ProposedActions";
-import { homeFeaturesSectionsData } from "@/db";
-import SharedFeatureSection from "./subs/SharedFeatureSection";
+import ProposedActions from './subs/ProposedActions';
+import { homeFeaturesSectionsData } from '@/db';
+import SharedFeatureSection from './subs/SharedFeatureSection';
 
 const Features = () => {
   return (
@@ -21,24 +21,22 @@ const Features = () => {
           data={data}
           key={index}
           sectionClasses={
-            index % 2 === 0
-              ? "lg:grid-cols-[0.9fr_1.1fr]"
-              : "lg:grid-cols-[1.1fr_0.9fr]"
+            index % 2 === 0 ? 'lg:grid-cols-[0.9fr_1.1fr]' : 'lg:grid-cols-[1.1fr_0.9fr]'
           }
-          colOneClasses={index % 2 === 0 ? "lg:order-last" : "lg:order-first"}
-          colTwoClasses={index % 2 === 0 ? "lg:order-first" : "lg:order-last"}
-          colOneAlignment={index % 2 === 0 ? "right" : "left"}
+          colOneClasses={index % 2 === 0 ? 'lg:order-last' : 'lg:order-first'}
+          colTwoClasses={index % 2 === 0 ? 'lg:order-first' : 'lg:order-last'}
+          colOneAlignment={index % 2 === 0 ? 'right' : 'left'}
         />
       ))}
       {/* CTA  */}
-      {/*<div*/}
-      {/*  className="text-white-main rounded-md py-2 px-4 text-center whitespace-pre-wrap leading-normal text-base"*/}
-      {/*  style={{*/}
-      {/*    background: 'linear-gradient(180deg, rgba(45,139,242,1) 0%, rgba(2,78,161,1) 100%)',*/}
-      {/*  }}*/}
-      {/*>*/}
-      {/*  Bekijk hier de toekomstige ontwikkelingen voor aankomende periode!*/}
-      {/*</div>*/}
+      <div
+        className="text-white-main rounded-md py-2 px-4 text-center whitespace-pre-wrap leading-normal text-base"
+        style={{
+          background: 'linear-gradient(180deg, rgba(45,139,242,1) 0%, rgba(2,78,161,1) 100%)',
+        }}
+      >
+        Bekijk hier de toekomstige ontwikkelingen voor aankomende periode!
+      </div>
     </section>
   );
 };

@@ -1,0 +1,10 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 944 570" width="944" height="570">
+	<title>White placeholder</title>
+	<defs>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f1" ><feDropShadow dx="0" dy="0" stdDeviation="7.083333333333334" flood-color="#000000" flood-opacity=".1"/></filter>
+	</defs>
+	<style>
+		.s0 { filter: url(#f1);fill: #ffffff } 
+	</style>
+	<path id="Blue copy 2" class="s0" d="m30 15h884c8.3 0 15 6.7 15 15v510c0 8.3-6.7 15-15 15h-884c-8.3 0-15-6.7-15-15v-510c0-8.3 6.7-15 15-15z"/>
+</svg>

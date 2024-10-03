@@ -1,66 +1,91 @@
-import React, { useState } from "react";
-import { FiMenu as IconMenu } from "react-icons/fi";
-import { IoMdClose as IconClose } from "react-icons/io";
-import { ActionIcon } from "@mantine/core";
-import { cn, getTailwindColor } from "@/utils";
-import { Button } from "../shared";
-import HeaderDrawerMobile from "./HeaderDrawerMobile";
-import useRedirect from "../../../helpers/useRedirect";
-import { LOGIN_URL, REGISTER_URL } from "../../../helpers/AppPaths";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FiMenu as IconMenu } from 'react-icons/fi';
+import { IoMdClose as IconClose } from 'react-icons/io';
+import { IoChevronDownOutline as IconChevronDown } from 'react-icons/io5';
+import { ActionIcon } from '@mantine/core';
+import styles from './Header.module.css';
+import { headerNavLinks } from '@/constants';
+import { cn, getTailwindColor } from '@/utils';
+import { Button } from '../shared';
+import HeaderDrawerMobile from './HeaderDrawerMobile';
 
 const Header = () => {
-  // States
   const [openDrawer, setOpenDrawer] = useState(false);
+  const [openPopovers, setOpenPopovers] = useState<boolean[]>(
+    new Array(headerNavLinks.length).fill(false)
+  );
 
-  const onRedirect = useRedirect();
-
-  // Handler ==> Toggle Drawer
   const toggleDrawerHandler = () => {
     setOpenDrawer((prevState) => !prevState);
   };
+
+  const handlePopoverOpen = (index: number) => {
+    setOpenPopovers((prev) => prev.map((open, i) => (i === index ? true : open)));
+  };
+
+  const handlePopoverClose = (index: number) => {
+    setOpenPopovers((prev) => prev.map((open, i) => (i === index ? false : open)));
+  };
+
   return (
     <>
       <header className="w-full flex items-center justify-between px-3 lg:px-4 h-[60px] lg:h-[80px] max-w-screen-lg gap-4">
-        {/* Logo  */}
-        <h1 className="text-3xl lg:text-4xl text-black-700 font-[800]">
-          BlueEngine
-        </h1>
-        {/* ---------------------------------------  */}
-        {/* Nav Links (Above: lg)  */}
-        {/*<nav className="hidden lg:flex items-center justify-center gap-10">*/}
-        {/*  {headerNavLinks.map((item: { title: string; url: string }, index: number) => (*/}
-        {/*    <Link*/}
-        {/*      to={item.url}*/}
-        {/*      key={index}*/}
-        {/*      className={cn(*/}
-        {/*        'text-black-400 text-lg',*/}
-        {/*        location.pathname.startsWith(item.url) ? 'text-blue-500' : ''*/}
-        {/*      )}*/}
-        {/*    >*/}
-        {/*      {item.title}*/}
-        {/*    </Link>*/}
-        {/*  ))}*/}
-        {/*</nav>*/}
-        {/* Auth Buttons (Above: lg) */}
+        <Link to="/">
+          <h1 className="text-3xl lg:text-4xl text-black-700 font-[800]">BlueEngine</h1>
+        </Link>
+        <nav className="hidden lg:flex items-center justify-center gap-10">
+          {headerNavLinks.map((item: INavLinkItem, index: number) =>
+            item?.url ? (
+              <Link to={item.url} key={index} className={cn('text-black-400 text-lg')}>
+                {item.title}
+              </Link>
+            ) : (
+              <div key={index} className={`relative ${styles.navLink} py-2`}>
+                <div className="flex items-center justify-center gap-2 cursor-pointer">
+                  <div className={cn('text-black-400 text-lg')}>{item.title}</div>
+                  <IconChevronDown
+                    className={`text-black-400 transition-all duration-300 ${styles.navLinkIconRotated}`}
+                    size={18}
+                  />
+                </div>
+                <div
+                  style={{
+                    boxShadow: '-0.5px 0px 5px 0px rgba(0,0,0,0.41)',
+                  }}
+                  className={`w-[260px] z-[999] hidden flex-col items-start absolute top-10 p-[10px] rounded bg-white-main left-0 bg-white gap-2 justify-start ${styles.navLinkPopover}`}
+                >
+                  {item.subPages?.map((page, i) =>
+                    page.active ? (
+                      <Link
+                        key={i}
+                        to={page.url}
+                        className="text-base text-black-400 hover:text-blue-500 transition-all duration-300"
+                      >
+                        {page.title}
+                      </Link>
+                    ) : (
+                      <div
+                        key={i}
+                        className="text-base text-black-400 hover:text-blue-500 transition-all duration-300"
+                      >
+                        {page.title}
+                      </div>
+                    )
+                  )}
+                </div>
+              </div>
+            )
+          )}
+        </nav>
         <div className="hidden lg:flex items-center justify-end gap-4">
-          <Button
-            onClick={() => onRedirect(LOGIN_URL)}
-            variant="outline"
-            color={getTailwindColor("blue", "700")}
-          >
-            Log In
+          <Button variant="outline" color={getTailwindColor('blue', '700')}>
+            Inloggen
           </Button>
-          <Button
-            onClick={() => onRedirect(REGISTER_URL)}
-            color={getTailwindColor("blue", "700")}
-          >
-            Sign Up
-          </Button>
+          <Button color={getTailwindColor('blue', '700')}>Aanmelden</Button>
         </div>
-        {/* -------------------------------------------  */}
-        {/* Menu Icon (Below: lg) */}
         <ActionIcon
-          color={getTailwindColor("blue", "700")}
+          color={getTailwindColor('blue', '700')}
           size="lg"
           onClick={toggleDrawerHandler}
           className="lg:hidden"
@@ -73,13 +98,7 @@ const Header = () => {
         </ActionIcon>
       </header>
 
-      {/* Menu Drawer (For Mobile) */}
-      {openDrawer && (
-        <HeaderDrawerMobile
-          opened={openDrawer}
-          toggleHandler={toggleDrawerHandler}
-        />
-      )}
+      {openDrawer && <HeaderDrawerMobile opened={openDrawer} toggleHandler={toggleDrawerHandler} />}
     </>
   );
 };

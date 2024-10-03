@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .box {
+    @apply py-[45px] px-[15px] mb-[1.5em];
+  }
+}
+
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: Nunito, sans-serif;
+  overflow-x: hidden;
 }

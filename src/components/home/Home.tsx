@@ -8,14 +8,14 @@ import StartTrial from './subs/StartTrial';
 
 const Home = () => {
   return (
-    <section className="w-full flex flex-col items-center justify-start">
+    <div className="w-full flex flex-col items-center justify-start">
       <Hero />
       <Trustpilot />
       <Features />
       <WhyBlueEngine />
       <Pricing />
       <StartTrial />
-    </section>
+    </div>
   );
 };
 

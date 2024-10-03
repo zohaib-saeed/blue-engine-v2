@@ -1,0 +1,12 @@
+/* Header.module.css */
+.navLinkIcon {
+  transition: transform 0.3s ease;
+}
+
+.navLink:hover .navLinkIconRotated {
+  transform: rotate(180deg);
+}
+
+.navLink:hover .navLinkPopover {
+  display: flex;
+}

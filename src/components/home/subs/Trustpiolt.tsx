@@ -1,7 +1,7 @@
 const Trustpilot = () => {
   return (
-    <section className="w-full flex items-center justify-center max-w-screen-sxl ">
-      <div className="w-full flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-5 bg-white-main py-6 lg:py-8 px-3 lg:px-4">
+    <section className="w-full flex items-center justify-center max-w-screen-sxl m-auto">
+      <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 bg-white-main py-6 lg:py-8 px-3 lg:px-4">
         <img
           src="/images/trustpilot-stars.svg"
           alt="Trustpilot"

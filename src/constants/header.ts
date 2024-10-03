@@ -1,3 +1,5 @@
+import { subFeaturesNames } from '@/db';
+
 export const headerNavLinks = [
   {
     title: 'Home',
@@ -5,7 +7,7 @@ export const headerNavLinks = [
   },
   {
     title: 'Features',
-    url: '/features',
+    subPages: subFeaturesNames,
   },
   {
     title: 'Resources',
