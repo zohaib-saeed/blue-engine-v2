@@ -24,15 +24,6 @@ const StackedCarousel: React.FC<IProps> = ({ containerClasses, images }) => {
     setImagesModal((p) => !p);
   };
 
-  //TODO: next handler for triggering carousel
-  // const handleNext = () => {
-  //   if (!isNextNavDisabled && !isSwiping) {
-  //     setDirection('next');
-  //     setActiveSlide((prev) => (prev + 1) % images.length);
-  //     setIsSwiping(false);
-  //   }
-  // };
-
   const handleNext = () => {
     if (!isNextNavDisabled && !isSwiping) {
       setDirection('next');
@@ -98,6 +89,9 @@ const StackedCarousel: React.FC<IProps> = ({ containerClasses, images }) => {
               const isActive = i === activeSlide;
               const offset = isActive ? 0 : (i - activeSlide + images.length) % images.length;
 
+              // Determine the image source based on its position
+              const src = i === 0 ? item.src : '/images/placeholders/white.svg';
+
               return (
                 <div
                   key={i}
@@ -114,7 +108,7 @@ const StackedCarousel: React.FC<IProps> = ({ containerClasses, images }) => {
                   }}
                 >
                   <img
-                    src={item.src}
+                    src={src}
                     alt={item.alt || 'BlueEngine'}
                     className="w-full h-full object-cover rounded-xl shadow-xl"
                   />
