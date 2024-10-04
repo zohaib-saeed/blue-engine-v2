@@ -1,16 +1,17 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { HomePage } from './pages/Home.page';
-import Layout from '@/components/layout/Layout';
-import SubFeaturePage from './pages/SubFeature.page';
-import TrackingView from './pages/features/TrackingView';
-import Retourverwerking from './pages/features/Retourverwerking';
-import Voorgestelde from './pages/features/Voorgestelde';
-import Orderverwerking from './pages/features/Orderverwerking';
-import CasehubAndKlantvragen from './pages/features/CasehubAndKlantvragen';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { HomePage } from "./pages/Home.page";
+import Layout from "@/components/layout/Layout";
+import SubFeaturePage from "./pages/SubFeature.page";
+import TrackingView from "./pages/features/TrackingView";
+import Retourverwerking from "./pages/features/Retourverwerking";
+import Voorgestelde from "./pages/features/Voorgestelde";
+import Orderverwerking from "./pages/features/Orderverwerking";
+import CasehubAndKlantvragen from "./pages/features/CasehubAndKlantvragen";
+import PrivacyPolicyPage from "@/pages/PrivacyPolicyPage";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: (
       <Layout>
         <HomePage />
@@ -18,10 +19,18 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: '/features',
+    path: "/return-app-privacy",
+    element: (
+      <Layout>
+        <PrivacyPolicyPage />
+      </Layout>
+    ),
+  },
+  {
+    path: "/features",
     children: [
       {
-        path: 'voorgestelde-acties',
+        path: "voorgestelde-acties",
         element: (
           <Layout>
             <Voorgestelde />
@@ -29,7 +38,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: 'orderverwerking',
+        path: "orderverwerking",
         element: (
           <Layout>
             <Orderverwerking />
@@ -37,7 +46,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: 'tracking-view',
+        path: "tracking-view",
         element: (
           <Layout>
             <TrackingView />
@@ -45,7 +54,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: 'retourverwerking-and-scan-app',
+        path: "retourverwerking-and-scan-app",
         element: (
           <Layout>
             <Retourverwerking />
@@ -53,7 +62,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: 'casehub-and-klantvragen',
+        path: "casehub-and-klantvragen",
         element: (
           <Layout>
             <CasehubAndKlantvragen />
@@ -61,7 +70,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: 'facturatie',
+        path: "facturatie",
         element: (
           <Layout>
             <SubFeaturePage />

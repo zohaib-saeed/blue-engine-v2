@@ -1,5 +1,7 @@
-import { PiGlobeStandBold as IconGlobe } from 'react-icons/pi';
-import { Button } from '@/components/shared';
+import { PiGlobeStandBold as IconGlobe } from "react-icons/pi";
+import { Button } from "@/components/shared";
+import { REGISTER_URL } from "../../../../helpers/AppPaths";
+import useRedirect from "../../../../helpers/useRedirect";
 
 interface IProps {
   data: { name?: string; title: string; subText?: string; image?: string };
@@ -7,6 +9,8 @@ interface IProps {
 
 const Hero: React.FC<IProps> = ({ data }) => {
   const { name, title, image, subText } = data;
+
+  const redirect = useRedirect();
 
   return (
     <section className="flex justify-center hero-section w-screen py-11 lg:pt-12 pb-16 px-3 lg:px-4 md:mb-7 bg-[url(/images/sub-features/hero-bg.png)] bg-cover bg-start bg-no-repeat)]">
@@ -31,14 +35,21 @@ const Hero: React.FC<IProps> = ({ data }) => {
           </p>
           {/*  CTA ==> Button */}
           <div className="flex items-center">
-            <Button className="bg-blue-700 text-white-main rounded-[3px] shadow-none text-base font-extrabold px-[30px] outline-none">
+            <Button
+              onClick={() => redirect(REGISTER_URL)}
+              className="bg-blue-700 text-white-main rounded-[3px] shadow-none text-base font-extrabold px-[30px] outline-none"
+            >
               Start meteen
             </Button>
           </div>
         </div>
         {/*  ---------------- Col 2 ---------------- */}
         <figure className="w-full relative pb-[60%]">
-          <img src={image} alt="hero" className="w-full h-full absolute top-0 left-0" />
+          <img
+            src={image}
+            alt="hero"
+            className="w-full h-full absolute top-0 left-0"
+          />
         </figure>
       </div>
     </section>

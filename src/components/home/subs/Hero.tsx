@@ -1,15 +1,19 @@
-import { Button } from '@/components/shared';
-import { getTailwindColor } from '@/utils';
+import { Button } from "@/components/shared";
+import { getTailwindColor } from "@/utils";
+import useRedirect from "../../../../helpers/useRedirect";
+import { REGISTER_URL } from "../../../../helpers/AppPaths";
 
 const Hero = () => {
   const bullets = [
-    '- Optimaliseert verzendproces',
-    '- Verminderd klantvragen',
-    '- Beschermd prestatienormen',
-    '- Versnelt retourenwerking',
-    '- Voorgestelde acties',
+    "- Optimaliseert verzendproces",
+    "- Verminderd klantvragen",
+    "- Beschermd prestatienormen",
+    "- Versnelt retourenwerking",
+    "- Voorgestelde acties",
     "- Geautomatiseerde verzoeken '' En nog veel meer!",
   ];
+
+  const redirect = useRedirect();
 
   return (
     <section className="w-full py-10 sm:py-16 lg:py-20 px-3 lg:px-4 bg-[url('/images/home/home-hero-bg.png')] bg-cover bg-center bg-no-repeat flex items-center justify-center">
@@ -20,27 +24,28 @@ const Hero = () => {
             Optimaliseer jouw bol.com business
           </h2>
           <p className="text-base md:text-lg text-left text-white-mercury">
-            Ontwikkeld om het{' '}
+            Ontwikkeld om het{" "}
             <span className="bg-white-main rounded-full px-[10px] font-bold text-sm md:text-base text-blue-700">
               drukke leven
-            </span>{' '}
-            van de bol.com partner te versimpelen. Met{' '}
+            </span>{" "}
+            van de bol.com partner te versimpelen. Met{" "}
             <span className="bg-white-main rounded-full px-[10px] font-bold text-sm md:text-base text-blue-700">
               talloze functies
-            </span>{' '}
-            welke jouw dagelijkse taken{' '}
+            </span>{" "}
+            welke jouw dagelijkse taken{" "}
             <span className="bg-white-main rounded-full px-[10px] font-bold text-sm md:text-base text-blue-700">
               automatiseert
             </span>
-            , meer inzicht in je business, ondersteunende acties maakt, al die{' '}
+            , meer inzicht in je business, ondersteunende acties maakt, al die{" "}
             <span className="bg-white-main rounded-full px-[10px] font-bold text-sm md:text-base text-blue-700">
               vervelende retourtjes
-            </span>{' '}
+            </span>{" "}
             verwerkt, prestatienormen bewaakt en nog veel meer!
           </p>
           <Button
-            color={getTailwindColor('white', 'main')}
+            color={getTailwindColor("white", "main")}
             className="mr-auto text-blue-700 hover:bg-white-main hover:text-blue-700"
+            onClick={() => redirect(REGISTER_URL)}
           >
             Probeer 14 dagen gratis
           </Button>

@@ -1,6 +1,10 @@
-import { Button } from '@/components/shared';
+import { Button } from "@/components/shared";
+import { REGISTER_URL } from "../../../../helpers/AppPaths";
+import useRedirect from "../../../../helpers/useRedirect";
 
 const StartTrial = () => {
+  const redirect = useRedirect();
+
   return (
     <section className="w-full max-w-screen-lg p-3 md:px-8 py-16 grid xs:grid-cols-2 gap-10 lg:gap-16">
       {/* Col 1 */}
@@ -11,7 +15,12 @@ const StartTrial = () => {
         <p className="text-base md:text-lg text-left text-black-800 md:max-w-[80%]">
           14 dagen gratis periode. Stopt automatisch. Geen betaalgegevens nodig.
         </p>
-        <Button className="bg-blue-700 text-white-main">Account aanmaken</Button>
+        <Button
+          onClick={() => redirect(REGISTER_URL)}
+          className="bg-blue-700 text-white-main"
+        >
+          Account aanmaken
+        </Button>
       </div>
       {/* Col 2 */}
       <div className="w-full order-1 xs:order-2 flex items-center justify-center">
