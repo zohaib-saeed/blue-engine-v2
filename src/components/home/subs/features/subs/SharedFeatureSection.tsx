@@ -272,15 +272,22 @@ const SharedFeatureSection: React.FC<IProps> = ({
           </div>
         </div>
         {/* Must Add roll = Button  */}
-        <a
-          href={data.featurePageUrl}
-          target="_blank"
-          className="text-black-800 text-base lg:text-lg font-[800] ml-auto mt-4 flex items-center justify-center gap-2 rounded-full border-2 border-solid border-black-800 px-4 py-[5px] cursor-pointer hover:bg-black-800/5 transition-all durration-300"
-          rel="noreferrer"
-        >
-          <span>Bekijk meer</span>
-          <IconArrowRight size={21} />
-        </a>
+        {data?.featurePageUrl ? (
+          <a
+            href={data.featurePageUrl}
+            target="_blank"
+            className="text-black-800 text-base lg:text-lg font-[800] ml-auto mt-4 flex items-center justify-center gap-2 rounded-full border-2 border-solid border-black-800 px-4 py-[5px] cursor-pointer hover:bg-black-800/5 transition-all durration-300"
+            rel="noreferrer"
+          >
+            <span>Bekijk meer</span>
+            <IconArrowRight size={21} />
+          </a>
+        ) : (
+          <div className="text-black-800 text-base lg:text-lg font-[800] ml-auto mt-4 flex items-center justify-center gap-2 rounded-full border-2 border-solid border-black-800 px-4 py-[5px] cursor-not-allowed hover:bg-black-800/5 transition-all durration-300">
+            <span>Bekijk meer</span>
+            <IconArrowRight size={21} />
+          </div>
+        )}
       </section>
     </>
   );
