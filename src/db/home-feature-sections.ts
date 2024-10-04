@@ -278,7 +278,7 @@ export const homeFeaturesSectionsData = [
   {
     heading: 'Facturatie',
     body: 'Nu met gescheiden NL en BE omzet.',
-    featurePageUrl: '/features/facturatie',
+    // featurePageUrl: '/features/facturatie',
     images: [{ src: '/images/home/facturatie/1.svg', alt: 'Facturatie 1' }],
     tablistClass: generateUuid(),
     tabs: [
