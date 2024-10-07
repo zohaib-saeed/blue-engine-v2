@@ -26,7 +26,7 @@ export const whyBlueEngineData = [
 export const transparentPricingData = [
   {
     title: "Starter",
-    price: "€ 19,95",
+    price: "€ 14,95",
     subscriptionDetail: "Ex. BTW",
     subscriptionTime: "maand",
     features: ["Tot 100 orders p.m."],
