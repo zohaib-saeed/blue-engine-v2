@@ -26,28 +26,28 @@ export const whyBlueEngineData = [
 export const transparentPricingData = [
   {
     title: "Starter",
-    price: "€ 14,95",
+    price: "€ 10,00",
     subscriptionDetail: "Ex. BTW",
     subscriptionTime: "maand",
     features: ["Tot 100 orders p.m."],
   },
   {
     title: "Groei",
-    price: "€ 29,95",
+    price: "€ 20,00",
     subscriptionDetail: "Ex. BTW",
     subscriptionTime: "maand",
     features: ["Tot 250 orders p.m."],
   },
   {
     title: "Business",
-    price: "€ 49,95",
+    price: "€ 30,00",
     subscriptionDetail: "Ex. BTW",
     subscriptionTime: "maand",
     features: ["Tot 500 orders p.m"],
   },
   {
     title: "Premium",
-    price: "€ 69,95",
+    price: "€ 40,00",
     subscriptionDetail: "Ex. BTW",
     subscriptionTime: "maand",
     features: ["Tot 1000 orders p.m."],

@@ -78,7 +78,7 @@ const Pricing = () => {
                 ))}
                 {index === 3 && (
                   <p className="text-[13px] sm:text-sm text-black-800 font-bold">
-                    (daama €9,99 per 250 orders)
+                    (daarna €5,00 per 250 orders)
                   </p>
                 )}
               </div>
