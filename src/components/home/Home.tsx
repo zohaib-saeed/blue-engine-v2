@@ -1,10 +1,10 @@
-import React from 'react';
-import Hero from './subs/Hero';
-import Trustpilot from './subs/Trustpiolt';
-import Features from './subs/features/Features';
-import WhyBlueEngine from './subs/WhyBlueEngine';
-import Pricing from './subs/Pricing';
-import StartTrial from './subs/StartTrial';
+import React from "react";
+import Hero from "./subs/Hero";
+import Trustpilot from "./subs/Trustpiolt";
+import Features from "./subs/features/Features";
+import WhyBlueEngine from "./subs/WhyBlueEngine";
+import Pricing from "./subs/Pricing";
+import StartTrial from "./subs/StartTrial";
 
 const Home = () => {
   return (
