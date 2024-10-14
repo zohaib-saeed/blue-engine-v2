@@ -1,7 +1,7 @@
-import React from 'react';
-import { IconType } from 'react-icons';
-import { Link } from 'react-router-dom';
-import { footerNaveMenu } from '@/constants/footer';
+import React from "react";
+import { IconType } from "react-icons";
+import { Link } from "react-router-dom";
+import { footerNaveMenu } from "@/constants/footer";
 
 const Footer = () => {
   return (
@@ -10,8 +10,10 @@ const Footer = () => {
         {/* Col 1 */}
         <div className="w-full md:col-span-3 lg:col-span-1 flex flex-col items-start justify-start gap-3">
           <div className="text-base lg:text-lg font-[800] text-white-main">
-            <span className="bg-white-main text-blue-950 px-[2px]">Accelereer</span> jouw Bol.com
-            business{' '}
+            <span className="bg-white-main text-blue-950 px-[2px]">
+              Accelereer
+            </span>{" "}
+            jouw Bol.com business{" "}
           </div>
           {/* Logo  */}
           <h1 className="text-3xl lg:text-4xl text-white-main font-[800] mt-5 lg:mt-10">
@@ -25,11 +27,17 @@ const Footer = () => {
             <span className="w-[45px] h-[2px] bg-blue-700 absolute -bottom-3 left-0" />
           </div>
           <div className="w-full flex flex-col items-start justify-start gap-3 mt-7 lg:mt-10">
-            {footerNaveMenu.links.map((item: { title: string; url: string }, index: number) => (
-              <Link to={item.url} key={index} className="text-white-main text-base lg:text-lg">
-                {item.title}
-              </Link>
-            ))}
+            {footerNaveMenu.links.map(
+              (item: { title: string; url: string }, index: number) => (
+                <Link
+                  to={item.url}
+                  key={index}
+                  className="text-white-main text-base lg:text-lg"
+                >
+                  {item.title}
+                </Link>
+              ),
+            )}
           </div>
         </div>
         {/* Col 3 */}
@@ -41,10 +49,14 @@ const Footer = () => {
           <div className="w-full flex flex-col items-start justify-start gap-3 mt-7 lg:mt-10">
             {footerNaveMenu.overeenkonsten.map(
               (item: { title: string; url: string }, index: number) => (
-                <Link to={item.url} key={index} className="text-white-main text-base lg:text-lg">
+                <Link
+                  to={item.url}
+                  key={index}
+                  className="text-white-main text-base lg:text-lg"
+                >
                   {item.title}
                 </Link>
-              )
+              ),
             )}
           </div>
         </div>
@@ -57,11 +69,16 @@ const Footer = () => {
           <div className="w-full flex flex-col items-start justify-start gap-3 mt-10">
             {footerNaveMenu.contact.map(
               (item: { title: string; icon: IconType }, index: number) => (
-                <div key={index} className="w-full flex items-start justify-start gap-2">
+                <div
+                  key={index}
+                  className="w-full flex items-start justify-start gap-2"
+                >
                   <item.icon size={21} color="white" className="mt-[6px]" />
-                  <div className="text-white-main text-base lg:text-lg">{item.title}</div>
+                  <div className="text-white-main text-base lg:text-lg">
+                    {item.title}
+                  </div>
                 </div>
-              )
+              ),
             )}
           </div>
         </div>

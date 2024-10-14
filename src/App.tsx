@@ -1,10 +1,10 @@
-import '@mantine/core/styles.css';
-import '@mantine/carousel/styles.css';
-import { MantineProvider } from '@mantine/core';
-import { Router } from './Router';
-import { theme } from './theme';
-import './index.css';
-import './styles/mantine.styles.css';
+import "@mantine/core/styles.css";
+import "@mantine/carousel/styles.css";
+import { MantineProvider } from "@mantine/core";
+import { Router } from "./Router";
+import { theme } from "./theme";
+import "./index.css";
+import "./styles/mantine.styles.css";
 
 export default function App() {
   return (

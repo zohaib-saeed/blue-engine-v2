@@ -19,7 +19,7 @@ export const subFeaturesNames = [
   {
     title: "Facturatie (binnenkort)",
     url: "/features/facturatie",
-    active: false,
+    active: true,
   },
 ];
 
@@ -349,38 +349,46 @@ export const featureCasehubAndKlantvragen = [
   },
 ];
 
-export const subFeaturesData = [
+export const featureFacturatie = [
   {
-    first: {
-      name: "Voorgestelde acties",
-      title: "Razendsnelle probleemherkenning",
-      subTitle:
-        "Meer dan +14 probleemherkeningen waar je geen omkijken meer naar hebt. ",
-      image: "/images/sub-features/1/hero.png",
-    },
-    second: {
-      title: "Wat is voorgestelde actie?",
-      subText:
-        "Deze feature is ontwikkeld om mogelijke knelpunten binnen jouw bol.com business te herkennen en op te lossen. Het legt acties voor je klaar welke je alleen nog maar hoeft te bevestigen, BlueEngine doet de rest.",
-    },
-    third: {
-      title: "Recht op vergoeding ",
-      subText:
-        "Stuurt automatische aanvragen voor vergoedingen naar Bol.com wanneer je daar recht op hebt, en controleert of deze aanvragen ook vergoedt zijn. Er zijn tal van situaties waarin jij een verzendlabel vergoedt kan krijgen, LIM of juist het retourlabel. Vaak heb je dit namelijk niet door of gaat het slechts om een paar euro per bestelling, wat al snel meer tijd kost dan wat je terugkrijgt. Nu worden dit allemaal automatisch voor jouw klaar gezet en bijgehouden, zonder erbij na te denken.",
-      image: "/images/sub-features/1/va-1.png",
-    },
-    fourth: {
-      title: "Meer dan 14 probleemherkenning",
-      subText:
-        "Al die kleine dingen waar je vaak te laat achter komt, dan wel niet tijd en energie kwijt bent om het op te lossen. Daarom hebben we het zo ingericht dat je er weinig omkijken naar hebt. Je ontvangt een melding met daarnaast kant-en-klare acties. In sommige gevallen is dat slechts een mailtje, in andere gevallen is dat een vergoedingsaanvraag of het nasturen van een pakketje.",
-      image: "/images/sub-features/1/va-2.png",
-    },
-    fifth: {
-      title: "Start onderzoek bij Bol.com of jouw vervoerder",
-      subText:
-        "Wanneer jouw pakket stilstaat bij de vervoerder dan dient er een onderzoek gestart te worden. Wij geven aan wanneer dit gebeurd en leggen het verzoek om een onderzoek te starten bij Bol.com of je vervoerder alvast klaar.",
-      image: "/images/sub-features/1/va-3.png",
-      name: "NEW",
-    },
+    name: "Gratis facturatie",
+    title: "De Belastingdienst maakt het je niet makkelijk, wij wel!",
+    subText: "De Belastingdienst maakt het niet makkelijker, wij wel! ",
+    image: "/images/sub-features/facturatie/hero.svg",
+  },
+  {
+    title: "Waarom facturatie",
+    subText:
+      "De facturatie feature helpt en ondersteunt alles wat te maken heeft met jouw facturen en gemaakte omzetten. We nemen een belangrijk deel voor jouw uit handen, en dit volledig gratis!",
+  },
+  {
+    title: "Gratis facturen aanmaken en uploaden",
+    subText:
+      "Elke factuuraanvraag wordt automatisc een factuur aangemaakt met jouw zakelijke gegevens.Je kunt er voor kiezen deze automatisch te uploaden naar bol.com, of deze liever zelf met 1 klik te uploaden. ",
+    image: "/images/sub-features/facturatie/1.svg",
+  },
+  {
+    title: "Maandelijske facturen downloaden",
+    subText:
+      "Wil jij graag alle facturen van bestelling voor je administratie bewaren? Geen probleem. Elke maand kun je de maandellijkse facturen in 1 bestand downloaden. ",
+    image: "/images/sub-features/facturatie/2.svg",
+  },
+  {
+    title: "Berekening maandelijkse omzet voor NL en BE",
+    subText:
+      "Wanneer je 2 keer per maand wordt uitbetaald dan wordt het lastiger om exact je omzet te bereken per maand. Via het maandelijkse omzet rapportage krijg je overzicht wat jij precies voor die maand aan omzet hebt gedraaid, gesplitst per land. Superhandig voor je belastingaangifte!",
+    image: "/images/sub-features/facturatie/3.svg",
+  },
+  {
+    title: "Belgische ondernemers",
+    subText:
+      "Elke bestelling naar een Belgische ondernemer is een intracommuncaitre levering, wat inhoudt dat deze apart dient aangegeven te worden bij de aangifte. BlueEngine maakt elk kwartaal een lijstje voor je met deze leveringen naar Belgische ondernemers. ",
+    image: "/images/sub-features/facturatie/4.svg",
+  },
+  {
+    title: "Creditnota´s (in ontwikkeling)",
+    subText:
+      "Maak nu ook handig creditnota’s aan voor al je retourbestellingen!",
+    image: "/images/sub-features/facturatie/5.svg",
   },
 ];

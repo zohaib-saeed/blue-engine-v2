@@ -1,0 +1,24 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="500" height="400">
+	<title>Fap 7 image 4</title>
+	<defs>
+		<image  width="1640" height="664" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABmgAAAKYAQMAAABNauWRAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAt9JREFUeJztzwEJADAMwLDPv+mbGDycRkE75yfzOmBVN65uXN24unF14+rG1Y2rG1c3rm5c3bi6cXXj6sbVjasbVzeublzduLpxdePqxtWNqxtXN65uXN24unF14+rG1Y2rG1c3rm5c3bi6cXXj6sbVjasbVzeublzduLpxdePqxtWNqxtXN65uXN24unF14+rG1Y2rG1c3rm5c3bi6cXXj6sbVjasbVzeublzduLpxdePqxtWNqxtXN65uXN24unF14+rG1Y2rG1c3rm5c3bi6cXXj6sbVjasbVzeublzduLpxdePqxtWNqxtXN65uXN24unF14+rG1Y2rG1c3rm5c3bi6cXXj6sbVjasbVzeublzduLpxdePqxtWNqxtXN65uXN24unF14+rG1Y2rG1c3rm5c3bi6cXXj6sbVjasbVzeublzduLpxdePqxtWNqxtXN65uXN24unF14+rG1Y2rG1c3rm5c3bi6cXXj6sbVjasbVzeublzduLpxdePqxtWNqxtXN65uXN24unF14+rG1Y2rG1c3rm5c3bi6cXXj6sbVjasbVzeublzduLpxdePqxtWNqxtXN65uXN24unF14+rG1Y2rG1c3rm5c3bi6cXXj6sbVjasbVzeublzduLpxdePqxtWNqxtXN65uXN24unF14+rG1Y2rG1c3rm5c3bi6cXXj6sbVjasbVzeublzduLpxdePqxtWNqxtXN65uXN24unF14+rG1Y2rG1c3rm5c3bi6cXXj6sbVjasbVzeublzduLpxdePqxtWNqxtXN65uXN24unF14+rG1Y2rG1c3rm5c3bi6cXXj6sbVjasbVzeublzduLpxdePqxtWNqxtXN65uXN24unF14+rG1Y2rG1c3rm5c3bi6cXXj6sbVjasbVzeublzduLpxdePqxtWNqxtXN65uXN24unF14+rG1Y2rG1c3rm5c3bi6cXXj6sbVjasbVzeublzduC46AAKZF/zUSgAAAABJRU5ErkJggg=="/>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m176.02 106h40.91c8.29 0 15 6.72 15 15v14.79c0 8.28-6.71 15-15 15h-40.91c-8.29 0-15-6.72-15-15v-14.79c0-8.28 6.71-15 15-15z"/>
+		</clipPath>
+	</defs>
+	<style>
+		.s0 { fill: #0664bc } 
+		.s1 { fill: #ae1c28 } 
+		.s2 { fill: #fdda25 } 
+		.s3 { fill: #000000 } 
+	</style>
+	<use id="Background" href="#img1" x="-109" y="-38"/>
+	<g id="NL-BE1 copy">
+		<path id="Shape 20" fill-rule="evenodd" class="s0" d="m191 179.9c0-2.2 0.5-4.4 1.5-6.3l18.4-35c2.2-4.1 5.8-6.6 9.7-6.6h96.6c3.9 0 7.5 2.5 9.7 6.6l18.4 35.1c1 1.8 1.5 4 1.5 6.3 0 6.2-4 11.3-9 11.3h-137.8c-5 0-9-5.1-9-11.4zm31.2 21.3v49.5h46.7v-49.5h15.6v74.2c0 8.2-5.3 14.9-11.7 14.9h-54.5c-6.5 0-11.7-6.7-11.7-14.9v-74.2zm109 0v79.2c0 5.4-3.4 9.9-7.8 9.9-4.3 0-7.7-4.5-7.7-9.9v-79.2z"/>
+		<g id="BE" clip-path="url(#cp1)">
+			<path id="Shape 17" class="s1" d="m231.9 106v45.1h-22.5v-45.1z"/>
+			<path id="Shape 18" class="s2" d="m209.4 106v45.1h-25.8v-45.1z"/>
+			<path id="Shape 19" class="s3" d="m183.6 106v45.1h-22.6v-45.1z"/>
+		</g>
+	</g>
+</svg>

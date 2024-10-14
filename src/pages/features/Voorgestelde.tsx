@@ -1,9 +1,9 @@
-import FeaturedSection from '@/components/features/subs/FeaturedSection';
-import Hero from '@/components/features/subs/Hero';
-import OpportunityFinder from '@/components/features/subs/OpportunityFinder';
-import ProductResearch from '@/components/features/subs/ProductResearch';
-import Trustpilot from '@/components/home/subs/Trustpiolt';
-import { featureVoorgestelde } from '@/db';
+import FeaturedSection from "@/components/features/FeaturedSection";
+import Hero from "@/components/features/Hero";
+import OpportunityFinder from "@/components/features/OpportunityFinder";
+import ProductResearch from "@/components/features/ProductResearch";
+import Trustpilot from "@/components/home/subs/Trustpiolt";
+import { featureVoorgestelde } from "@/db";
 
 const Voorgestelde = () => {
   const feature = featureVoorgestelde;

@@ -1,6 +1,6 @@
 import { Button } from "@/components/shared";
-import { REGISTER_URL } from "../../../../helpers/AppPaths";
-import useRedirect from "../../../../helpers/useRedirect";
+import { REGISTER_URL } from "../../../helpers/AppPaths";
+import useRedirect from "../../../helpers/useRedirect";
 
 const ProductResearch = () => {
   const redirect = useRedirect();

@@ -1,13 +1,13 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { HomePage } from "./pages/Home.page";
 import Layout from "@/components/layout/Layout";
-import SubFeaturePage from "./pages/SubFeature.page";
 import TrackingView from "./pages/features/TrackingView";
 import Retourverwerking from "./pages/features/Retourverwerking";
 import Voorgestelde from "./pages/features/Voorgestelde";
 import Orderverwerking from "./pages/features/Orderverwerking";
 import CasehubAndKlantvragen from "./pages/features/CasehubAndKlantvragen";
 import PrivacyPolicyPage from "@/pages/PrivacyPolicyPage";
+import Facturatie from "./pages/features/Facturatie";
 
 const router = createBrowserRouter([
   {
@@ -73,7 +73,7 @@ const router = createBrowserRouter([
         path: "facturatie",
         element: (
           <Layout>
-            <SubFeaturePage />
+            <Facturatie />
           </Layout>
         ),
       },

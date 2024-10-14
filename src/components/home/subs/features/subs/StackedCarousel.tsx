@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { GoChevronLeft as IconPrevious, GoChevronRight as IconNext } from 'react-icons/go';
-import { useSwipeable } from 'react-swipeable';
-import { Button } from '@/components/shared';
-import { cn } from '@/utils';
-import ImagesModal from './ImagesModal';
+import React, { useEffect, useState } from "react";
+import {
+  GoChevronLeft as IconPrevious,
+  GoChevronRight as IconNext,
+} from "react-icons/go";
+import { useSwipeable } from "react-swipeable";
+import { Button } from "@/components/shared";
+import { cn } from "@/utils";
+import ImagesModal from "./ImagesModal";
 
 interface IProps {
   containerClasses?: string;
@@ -13,7 +16,7 @@ interface IProps {
 const StackedCarousel: React.FC<IProps> = ({ containerClasses, images }) => {
   // States
   const [activeSlide, setActiveSlide] = useState(0);
-  const [direction, setDirection] = useState<'next' | 'previous' | null>(null);
+  const [direction, setDirection] = useState<"next" | "previous" | null>(null);
   const [imagesModal, setImagesModal] = useState<boolean>(false);
   const [isSwiping, setIsSwiping] = useState(false);
   const [isNextNavDisabled, setIsNextNavDisabled] = useState(false);
@@ -26,7 +29,7 @@ const StackedCarousel: React.FC<IProps> = ({ containerClasses, images }) => {
 
   const handleNext = () => {
     if (!isNextNavDisabled && !isSwiping) {
-      setDirection('next');
+      setDirection("next");
       toggleImagedModalHandler();
       setIsSwiping(false);
     }
@@ -34,7 +37,7 @@ const StackedCarousel: React.FC<IProps> = ({ containerClasses, images }) => {
 
   const handlePrevious = () => {
     if (!isPrevNavDisabled && !isSwiping) {
-      setDirection('previous');
+      setDirection("previous");
       setActiveSlide((prev) => (prev - 1 + images.length) % images.length);
       setIsSwiping(false);
     }
@@ -80,27 +83,29 @@ const StackedCarousel: React.FC<IProps> = ({ containerClasses, images }) => {
         <div
           {...swipeHandlers}
           className={cn(
-            'w-full h-fit max-w-[70%] md:max-w-[50%] lg:max-w-none m-auto flex items-center justify-start flex-col relative mt-8 lg:mt-16',
-            containerClasses
+            "w-full h-fit max-w-[70%] md:max-w-[50%] lg:max-w-none m-auto flex items-center justify-start flex-col relative mt-8 lg:mt-16",
+            containerClasses,
           )}
         >
           <div className="relative w-full pb-[60%]">
             {images.map((item, i) => {
               const isActive = i === activeSlide;
-              const offset = isActive ? 0 : (i - activeSlide + images.length) % images.length;
+              const offset = isActive
+                ? 0
+                : (i - activeSlide + images.length) % images.length;
 
               // Determine the image source based on its position
-              const src = i === 0 ? item.src : '/images/placeholders/white.svg';
+              const src = i === 0 ? item.src : "/images/placeholders/white.svg";
 
               return (
                 <div
                   key={i}
                   className={`w-full h-full absolute rounded-xl transition-transform duration-500 ease-in-out ${
-                    direction === 'next'
-                      ? 'animate-slide-next'
-                      : direction === 'previous'
-                        ? 'animate-slide-previous'
-                        : ''
+                    direction === "next"
+                      ? "animate-slide-next"
+                      : direction === "previous"
+                        ? "animate-slide-previous"
+                        : ""
                   }`}
                   style={{
                     transform: `translate(${offset * 12}px, -${offset * 12}px)`,
@@ -109,7 +114,7 @@ const StackedCarousel: React.FC<IProps> = ({ containerClasses, images }) => {
                 >
                   <img
                     src={src}
-                    alt={item.alt || 'BlueEngine'}
+                    alt={item.alt || "BlueEngine"}
                     className="w-full h-full object-cover rounded-xl shadow-xl"
                   />
                 </div>
@@ -122,7 +127,7 @@ const StackedCarousel: React.FC<IProps> = ({ containerClasses, images }) => {
             tabIndex={0}
             onClick={handleClick}
             onKeyDown={(e) => {
-              if (e.key === 'Enter' || e.key === ' ') {
+              if (e.key === "Enter" || e.key === " ") {
                 handleClick();
               }
             }}
@@ -136,13 +141,16 @@ const StackedCarousel: React.FC<IProps> = ({ containerClasses, images }) => {
                 handlePrevious();
               }}
               className={cn(
-                'border-[1px] shadow-md border-solid border-blue-600 bg-blue-600 opacity-70 rounded-full flex items-center justify-center p-[5px]',
-                isPrevNavDisabled ? 'border-white-main bg-white-main' : ''
+                "border-[1px] shadow-md border-solid border-blue-600 bg-blue-600 opacity-70 rounded-full flex items-center justify-center p-[5px]",
+                isPrevNavDisabled ? "border-white-main bg-white-main" : "",
               )}
             >
               <IconPrevious
                 size={28}
-                className={cn('text-white-main', isPrevNavDisabled ? 'text-neutral-400' : '')}
+                className={cn(
+                  "text-white-main",
+                  isPrevNavDisabled ? "text-neutral-400" : "",
+                )}
               />
             </Button>
             <div className="h-full relative">
@@ -154,13 +162,16 @@ const StackedCarousel: React.FC<IProps> = ({ containerClasses, images }) => {
                   handleNext();
                 }}
                 className={cn(
-                  'border-[1px] shadow-md border-solid border-blue-600 bg-blue-600 opacity-70 rounded-full flex items-center justify-center p-[5px]',
-                  isNextNavDisabled ? 'border-white-main bg-white-main' : ''
+                  "border-[1px] shadow-md border-solid border-blue-600 bg-blue-600 opacity-70 rounded-full flex items-center justify-center p-[5px]",
+                  isNextNavDisabled ? "border-white-main bg-white-main" : "",
                 )}
               >
                 <IconNext
                   size={28}
-                  className={cn('text-white-main', isNextNavDisabled ? 'text-neutral-400' : '')}
+                  className={cn(
+                    "text-white-main",
+                    isNextNavDisabled ? "text-neutral-400" : "",
+                  )}
                 />
               </Button>
             </div>

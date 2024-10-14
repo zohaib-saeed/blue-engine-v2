@@ -7,7 +7,9 @@ const Trustpilot = () => {
           alt="Trustpilot"
           className="h-[28px] lg:h-[34px] w-[175px] lg:w-[215px]"
         />
-        <div className="text-base lg:text-lg text-blue-950">4.8 gebasseerd op 24 reviews op</div>
+        <div className="text-base lg:text-lg text-blue-950">
+          4.8 gebasseerd op 24 reviews op
+        </div>
         <img
           src="/images/trustpilot-logo.svg"
           alt="Trustpilot"

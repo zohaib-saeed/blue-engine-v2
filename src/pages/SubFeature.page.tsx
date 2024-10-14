@@ -1,4 +1,4 @@
-import SubFeature from '@/components/features/SubFeature';
+import SubFeature from "@/components/features/SubFeature";
 
 const SubFeaturePage = () => {
   return <SubFeature />;

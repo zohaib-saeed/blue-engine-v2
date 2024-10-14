@@ -1,4 +1,6 @@
-const OpportunityFinder: React.FC<{ data: { title: string; subText: string } }> = ({ data }) => {
+const OpportunityFinder: React.FC<{
+  data: { title: string; subText: string };
+}> = ({ data }) => {
   const { title, subText } = data;
   return (
     <section className=" max-w-screen-xl mx-auto box flex flex-col gap-1 items-center justify-center px-3 lg:px-4">

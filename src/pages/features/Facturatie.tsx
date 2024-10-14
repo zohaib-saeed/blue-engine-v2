@@ -3,10 +3,10 @@ import Hero from "@/components/features/Hero";
 import OpportunityFinder from "@/components/features/OpportunityFinder";
 import ProductResearch from "@/components/features/ProductResearch";
 import Trustpilot from "@/components/home/subs/Trustpiolt";
-import { featureOrderverwerking } from "@/db";
+import { featureFacturatie } from "@/db";
 
-const Orderverwerking = () => {
-  const feature = featureOrderverwerking;
+const Facturatie = () => {
+  const feature = featureFacturatie;
 
   return (
     <div className="w-full flex flex-col items-center justify-start">
@@ -21,4 +21,4 @@ const Orderverwerking = () => {
   );
 };
 
-export default Orderverwerking;
+export default Facturatie;

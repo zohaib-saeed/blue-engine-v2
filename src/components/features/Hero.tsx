@@ -1,7 +1,7 @@
 import { PiGlobeStandBold as IconGlobe } from "react-icons/pi";
 import { Button } from "@/components/shared";
-import { REGISTER_URL } from "../../../../helpers/AppPaths";
-import useRedirect from "../../../../helpers/useRedirect";
+import useRedirect from "../../../helpers/useRedirect";
+import { REGISTER_URL } from "../../../helpers/AppPaths";
 
 interface IProps {
   data: { name?: string; title: string; subText?: string; image?: string };
