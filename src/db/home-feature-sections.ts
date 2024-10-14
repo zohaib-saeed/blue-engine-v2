@@ -280,7 +280,10 @@ export const homeFeaturesSectionsData = [
     body: "Nu met gescheiden NL en BE omzet.",
     featurePageUrl: "/features/facturatie",
     mainTab: 0,
-    images: [{ src: "/images/home/facturatie/1.svg", alt: "Facturatie 1" }],
+    images: [
+      { src: "/images/home/facturatie/1.svg", alt: "Facturatie 1" },
+      { src: "/images/home/facturatie/2.svg", alt: "Facturatie 2" },
+    ],
     tablistClass: generateUuid(),
     tabs: [
       {

@@ -17,7 +17,7 @@ export const subFeaturesNames = [
     active: true,
   },
   {
-    title: "Facturatie (binnenkort)",
+    title: "Facturatie",
     url: "/features/facturatie",
     active: true,
   },
@@ -352,8 +352,8 @@ export const featureCasehubAndKlantvragen = [
 export const featureFacturatie = [
   {
     name: "Gratis facturatie",
-    title: "De Belastingdienst maakt het je niet makkelijk, wij wel!",
-    subText: "De Belastingdienst maakt het niet makkelijker, wij wel! ",
+    title: "Facturen aanmaken en uploaden",
+    subText: "De Belastingdienst maakt het niet makkelijker, wij wel!",
     image: "/images/sub-features/facturatie/hero.svg",
   },
   {
@@ -364,13 +364,13 @@ export const featureFacturatie = [
   {
     title: "Gratis facturen aanmaken en uploaden",
     subText:
-      "Elke factuuraanvraag wordt automatisc een factuur aangemaakt met jouw zakelijke gegevens.Je kunt er voor kiezen deze automatisch te uploaden naar bol.com, of deze liever zelf met 1 klik te uploaden. ",
+      "Voor elke factuuraanvraag wordt automatisch een factuur aangemaakt met jouw zakelijke gegevens. Je kunt er voor kiezen deze automatisch te uploaden, of deze liever zelf met 1 klik te uploaden naar Bol.com.",
     image: "/images/sub-features/facturatie/1.svg",
   },
   {
-    title: "Maandelijske facturen downloaden",
+    title: "Maandelijkse facturen downloaden",
     subText:
-      "Wil jij graag alle facturen van bestelling voor je administratie bewaren? Geen probleem. Elke maand kun je de maandellijkse facturen in 1 bestand downloaden. ",
+      "Wil jij graag alle facturen van je bestellingen bewaren voor je administratie? Je kunt gemakkelijk de facturen downloaden van elke factuurspecificatie, allemaal in 1 PDF bestand.",
     image: "/images/sub-features/facturatie/2.svg",
   },
   {
