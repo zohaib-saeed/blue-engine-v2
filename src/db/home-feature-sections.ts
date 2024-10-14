@@ -201,7 +201,7 @@ export const homeFeaturesSectionsData = [
   {
     heading: "CaseHub",
     body: "Klantvragen direct naar jouw eigen klantomgeving.",
-    featurePageUrl: "/features/casehub",
+    featurePageUrl: "/features/casehub-and-klantvragen",
     images: [
       { src: "/images/home/casehub/1.svg", alt: "CaseHub 1" },
       { src: "/images/home/casehub/2.svg", alt: "CaseHub 2" },
@@ -240,7 +240,7 @@ export const homeFeaturesSectionsData = [
   {
     heading: "Klantvragen Bol.com ",
     body: "Al jouw klantvragen op 1 plek",
-    featurePageUrl: "/features/klantvragen-bol.com",
+    featurePageUrl: "/features/casehub-and-klantvragen",
     images: [
       { src: "/images/home/klantvragen/1.svg", alt: "Klantvragen Bol.com 1" },
       { src: "/images/home/klantvragen/2.svg", alt: "Klantvragen Bol.com 2" },
