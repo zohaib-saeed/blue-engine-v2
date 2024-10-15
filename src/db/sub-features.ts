@@ -79,12 +79,12 @@ export const featureOrderverwerking = [
   {
     title: "Wat doet orderverwerking?",
     subText:
-      "Dagelijkse orderverwerking vanuit het verkoopaccount is heel veel repititeve handelingen. Maximaal 25 orders per keer, productinfo downloaden en/of handmatig op het label schrijven. Daarom is orderverwerking ontworpen met een ‘1-klik mentaliteit’. ",
+      "Dagelijkse orderverwerking vanuit het verkoopaccount is heel veel repetitive handelingen. Maximaal 25 orders per keer, productinfo downloaden en/of handmatig op het label schrijven. Daarom is orderverwerking ontworpen met een ‘1-klik mentaliteit’. ",
   },
   {
     title: "Jouw productinfo direct op het VVB-label",
     subText:
-      "Het te verzenden product(en), aantal en eventuele magazijncode direct op het VVB-label. Niet meer handmatig op elk VVB label te schrijven. Nu ook mogelijjk een losse notitie toe te voegen per vezendlabel.",
+      "Het te verzenden product(en), aantal en eventuele magazijncode direct op het VVB-label. Niet meer handmatig op elk VVB label te schrijven. Nu ook mogelijk een losse notitie toe te voegen per verzendlabel.",
     image: "/images/sub-features/orderverwerking/1.svg",
   },
   {
@@ -114,7 +114,7 @@ export const featureOrderverwerking = [
   {
     title: "Productgroepen maken en bulk listing wijzingen doen",
     subText:
-      "Wil jij graak wekelijks een vaste groep producten wijzigen qua levertijd of prijzen. Dit kan nu makkelijk door meerdere groepen te maken en deze in bulk te kunnen wijzigen. ",
+      "Wil jij graag wekelijks een vaste groep producten wijzigen qua levertijd of prijzen. Dit kan nu makkelijk door meerdere groepen te maken en deze in bulk te kunnen wijzigen. ",
     image: "/images/sub-features/orderverwerking/6.svg",
   },
   {
@@ -213,7 +213,7 @@ export const featureTrackingView = [
   {
     title: "Automatisch onderzoek starten",
     subText:
-      "Indien er eventuele vertragingen vertragingen of teruggestuurde pakketten zijn, dan kun je gelijk een onderzoek starten. Onderzoek bij VVB zendignen sturen wij naar Bol.com, en voor NON VVB naar je vervoerder. ",
+      "Indien er eventuele vertragingen vertragingen of teruggestuurde pakketten zijn, dan kun je gelijk een onderzoek starten. Onderzoek bij VVB zendingen sturen wij naar Bol.com, en voor NON VVB naar je vervoerder. ",
     image: "/images/sub-features/tracking/6.svg",
   },
   {
@@ -251,7 +251,7 @@ export const featureRetourverwerking = [
   {
     title: "Retouren verwerken met de camera van je mobiel",
     subText:
-      "Met onze app kun je gemakkelijk de barcode van je retour scannen en direct vanaf je mobiel verwerken, ook teruggestuurde pakketten of niet-afgehaald parcelshop pakketten worden herkent. Je kunt zelfs foto’s en notities toevoegen. Handig als je bijvoorbeeld een retour afkeurd.",
+      "Met onze app kun je gemakkelijk de barcode van je retour scannen en direct vanaf je mobiel verwerken, ook teruggestuurde pakketten of niet-afgehaald parcelshop pakketten worden herkent. Je kunt zelfs foto’s en notities toevoegen. Handig als je bijvoorbeeld een retour afkeurde.",
     image: "/images/sub-features/retourverwerking/1.svg",
   },
   {
@@ -269,7 +269,7 @@ export const featureRetourverwerking = [
   {
     title: "Retour valt buiten de retourtermijn",
     subText:
-      "Melding wanneer retour buiten de retourtermijn valt, en wanneer deze al eerder retour gemeldt is. ",
+      "Melding wanneer retour buiten de retourtermijn valt, en wanneer deze al eerder retour gemeld is. ",
     image: "/images/sub-features/retourverwerking/4.svg",
   },
   {
@@ -297,7 +297,7 @@ export const featureCasehubAndKlantvragen = [
   {
     title: "Waarom CaseHub",
     subText:
-      "Deze feature biedt de mogelijkheden om al jouw (bol.com) klantvragen razensnel te kunnen afhandelen. Alle benodigde acties staan al boven je klantvraag. Van nasturen en retour accepteren tot vergoeding aanvragen en meer!",
+      "Deze feature biedt de mogelijkheden om al jouw (bol.com) klantvragen razendsnel te kunnen afhandelen. Alle benodigde acties staan al boven je klantvraag. Van nasturen en retour accepteren tot vergoeding aanvragen en meer!",
   },
   {
     title: "Nu Bol.com vragen integratie koppeling mogelijk",
@@ -306,7 +306,7 @@ export const featureCasehubAndKlantvragen = [
     image: "/images/sub-features/casehub/1.svg",
   },
   {
-    title: "Razensnelle afhandeling met onze vervolgacties",
+    title: "Razendsnelle afhandeling met onze vervolgacties",
     subText:
       "Alles wat jij nodig hebt om snel klantvragen af te kunnen handelen binnen handbereik! Of het nou gaat om een LIM verzoek of retour aanmelden. Veel meer directe opties dan in je reguliere verkooopaccount.",
     image: "/images/sub-features/casehub/2.svg",
@@ -314,7 +314,7 @@ export const featureCasehubAndKlantvragen = [
   {
     title: "Jouw eigen klantvragen ",
     subText:
-      "Klanten kunnen direct reageren op jouw mailcampagnes mochten ze vragen hebben. Deze worden dan geshowed naast je bol.com klantvragen. Zo kun je klanten een stuk sneller helpen en komt de klantvraag direct bij jou uit, in plaats via jouw verkoopaccount. ",
+      "Klanten kunnen direct reageren op jouw mailcampagnes mochten ze vragen hebben. Deze worden dan geshowd naast je bol.com klantvragen. Zo kun je klanten een stuk sneller helpen en komt de klantvraag direct bij jou uit, in plaats via jouw verkoopaccount. ",
     image: "/images/sub-features/casehub/3.svg",
   },
   {
@@ -326,7 +326,7 @@ export const featureCasehubAndKlantvragen = [
   {
     title: "MessageView",
     subText:
-      "Alle binnenkomende of uitgaande emails worden automatisch gekoppeld aan de order. Of dat nou directe emailtje zijn, mailcampagnes of klantvragen. Zo kun je gemakkelijk alle communicatie in één keer zien.",
+      "Alle binnenkomende of uitgaande emails worden automatisch gekoppeld aan de order. Of dat nou directe e-mailtje zijn, mailcampagnes of klantvragen. Zo kun je gemakkelijk alle communicatie in één keer zien.",
     image: "/images/sub-features/casehub/5.svg",
   },
   {
@@ -337,7 +337,7 @@ export const featureCasehubAndKlantvragen = [
   {
     title: "Kant ’n klare mailcampagnes",
     subText:
-      "Niet weer allemaal ingewikkelde mailcampanes op te hoeven stellen. Wij hebben deze al voor je klaar staan. Je hoeft ze alleen maar te activeren.",
+      "Niet weer allemaal ingewikkelde mailcampagnes op te hoeven stellen. Wij hebben deze al voor je klaar staan. Je hoeft ze alleen maar te activeren.",
     image: "/images/sub-features/casehub/7.svg",
   },
   {
