@@ -9,6 +9,10 @@ export const headerNavLinks = [
     title: "Features",
     subPages: subFeaturesNames,
   },
+  {
+    title: "Prijzen",
+    url: "/#pricing",
+  },
   // {
   //   title: 'Resources',
   //   url: '/resources',
