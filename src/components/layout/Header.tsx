@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FiMenu as IconMenu } from "react-icons/fi";
 import { IoMdClose as IconClose } from "react-icons/io";
 import { IoChevronDownOutline as IconChevronDown } from "react-icons/io5";
@@ -35,6 +35,26 @@ const Header = () => {
   // };
 
   const redirect = useRedirect();
+  const navigate = useNavigate();
+
+  // Handles in-page scroll for links containing hashes
+  const handleLinkClick = (url: string) => {
+    if (url.includes("#")) {
+      const [path, hash] = url.split("#");
+      if (path) {
+        navigate(path); // Navigate to the page if needed
+      }
+      // Scroll to the section after navigation
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 0);
+    } else {
+      navigate(url);
+    }
+  };
 
   return (
     <>
@@ -47,13 +67,13 @@ const Header = () => {
         <nav className="hidden lg:flex items-center justify-center gap-10">
           {headerNavLinks.map((item: INavLinkItem, index: number) =>
             item?.url ? (
-              <Link
-                to={item.url}
+              <div
                 key={index}
-                className={cn("text-black-400 text-lg")}
+                className={cn("text-black-400 text-lg  cursor-pointer")}
+                onClick={() => handleLinkClick(item?.url!)}
               >
                 {item.title}
-              </Link>
+              </div>
             ) : (
               <div key={index} className={`relative ${styles.navLink} py-2`}>
                 <div className="flex items-center justify-center gap-2 cursor-pointer">

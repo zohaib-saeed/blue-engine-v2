@@ -1,4 +1,3 @@
-import ProposedActions from "./subs/ProposedActions";
 import { homeFeaturesSectionsData } from "@/db";
 import SharedFeatureSection from "./subs/SharedFeatureSection";
 
@@ -15,7 +14,6 @@ const Features = () => {
         </p>
       </div>
       {/* Sections  */}
-      <ProposedActions />
       {homeFeaturesSectionsData.slice(1).map((data, index) => (
         <SharedFeatureSection
           data={data}

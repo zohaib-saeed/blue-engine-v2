@@ -5,6 +5,7 @@ import Features from "./subs/features/Features";
 import WhyBlueEngine from "./subs/WhyBlueEngine";
 import Pricing from "./subs/Pricing";
 import StartTrial from "./subs/StartTrial";
+import ProposedActions from "./subs/features/subs/ProposedActions";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <WhyBlueEngine />
       <Pricing />
       <StartTrial />
+      <ProposedActions />
     </div>
   );
 };

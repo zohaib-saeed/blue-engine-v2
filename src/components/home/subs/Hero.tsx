@@ -4,15 +4,6 @@ import useRedirect from "../../../../helpers/useRedirect";
 import { REGISTER_URL } from "../../../../helpers/AppPaths";
 
 const Hero = () => {
-  const bullets = [
-    "- Optimaliseert verzendproces",
-    "- Verminderd klantvragen",
-    "- Beschermd prestatienormen",
-    "- Versnelt retourenwerking",
-    "- Voorgestelde acties",
-    "- Geautomatiseerde verzoeken '' En nog veel meer!",
-  ];
-
   const redirect = useRedirect();
 
   return (
@@ -21,7 +12,7 @@ const Hero = () => {
         {/* Col 1  */}
         <div className="w-full flex flex-col item-center justify-center gap-2 xs:gap-4 md:gap-5">
           <h2 className="text-white-main font-[800] text-3xl md:text-4xl lg:text-5xl">
-            Optimaliseer jouw bol.com business
+            Magazijnsoftware voor VVB en Non-VVBERs
           </h2>
           <p className="text-base md:text-lg text-left text-white-mercury">
             Ontwikkeld om het{" "}
@@ -47,7 +38,7 @@ const Hero = () => {
             className="mr-auto text-blue-700 hover:bg-white-main hover:text-blue-700"
             onClick={() => redirect(REGISTER_URL)}
           >
-            Probeer 14 dagen gratis
+            Probeer 14 dagen gratis uit
           </Button>
         </div>
         {/* Col 2  */}

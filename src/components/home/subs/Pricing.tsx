@@ -9,7 +9,10 @@ const Pricing = () => {
   const redirect = useRedirect();
 
   return (
-    <section className="w-full px-3 lg:px:4 flex items-center justify-start flex-col gap-12 md:gap-14 py-16 bg-blue-200/50 overflow-hidden">
+    <section
+      id="pricing"
+      className="w-full px-3 lg:px:4 flex items-center justify-start flex-col gap-12 md:gap-14 py-16 bg-blue-200/50 overflow-hidden"
+    >
       <div className="flex flex-col items-center justify-center gap-3">
         <p className="text-blue-700 text-center text-sm font-semibold">
           Onbeperkt aantal winkels
@@ -53,7 +56,7 @@ const Pricing = () => {
                 </div>
               </div>
               {/* Bullets ==> Features  */}
-              <div className="w-full flex flex-col items-center justify-start gap-2 mt-3 min-h-20">
+              <div className="w-full flex flex-col items-center justify-start gap-2 mt-3 min-h-24">
                 {item.features.map((bullet, i) => (
                   <div
                     key={i}
@@ -76,11 +79,6 @@ const Pricing = () => {
                     </p>
                   </div>
                 ))}
-                {index === 3 && (
-                  <p className="text-[13px] sm:text-sm text-black-800 font-bold">
-                    (daarna €5,00 per 250 orders)
-                  </p>
-                )}
               </div>
               {/* Button  */}
               <Button
