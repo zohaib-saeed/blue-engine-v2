@@ -18,6 +18,16 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
+
+  {
+    path: "/nl",
+    element: (
+      <Layout>
+        <HomePage />
+      </Layout>
+    ),
+  },
+
   {
     path: "/return-app-privacy",
     element: (
