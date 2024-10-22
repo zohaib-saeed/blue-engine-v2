@@ -64,7 +64,7 @@ const ProposedActions = () => {
   }, [activeTab]);
 
   return (
-    <section className="w-full max-w-screen-sxl flex flex-col items-center justify-start gap-12 py-12 px-4">
+    <section className="w-full max-w-screen-sxl flex flex-col items-center justify-start gap-12">
       <div
         className="w-full flex flex-col items-center justify-start gap-2 rounded-md mt-6 px-4 md:px-14 pt-12 pb-3 transition-all duration-300 relative"
         style={{

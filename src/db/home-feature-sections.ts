@@ -238,7 +238,7 @@ export const homeFeaturesSectionsData = [
   },
   // ---------------------------------------------
   {
-    heading: "Klantvragen Bol.com ",
+    heading: "Klantvragen bol.com (beta)",
     body: "Al jouw klantvragen op 1 plek",
     featurePageUrl: "/features/casehub-and-klantvragen",
     images: [

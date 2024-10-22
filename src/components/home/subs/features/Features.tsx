@@ -1,5 +1,6 @@
 import { homeFeaturesSectionsData } from "@/db";
 import SharedFeatureSection from "./subs/SharedFeatureSection";
+import ProposedActions from "./subs/ProposedActions";
 
 const Features = () => {
   return (
@@ -28,6 +29,7 @@ const Features = () => {
           colOneAlignment={index % 2 === 0 ? "right" : "left"}
         />
       ))}
+      <ProposedActions />
       {/* CTA  */}
       <div
         className="text-white-main rounded-md py-2 px-4 text-center whitespace-pre-wrap leading-normal text-base"

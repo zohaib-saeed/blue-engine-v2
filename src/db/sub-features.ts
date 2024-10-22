@@ -79,7 +79,7 @@ export const featureOrderverwerking = [
   {
     title: "Wat doet orderverwerking?",
     subText:
-      "Dagelijkse orderverwerking vanuit het verkoopaccount is heel veel repetitive handelingen. Maximaal 25 orders per keer, productinfo downloaden en/of handmatig op het label schrijven. Daarom is orderverwerking ontworpen met een ‘1-klik mentaliteit’. ",
+      "Dagelijkse orderverwerking vanuit het verkoopaccount is heel veel repititive handelingen. Maximaal 25 orders per keer, productinfo downloaden en/of handmatig op het label schrijven. Daarom is orderverwerking ontworpen met een ‘1-klik mentaliteit’. ",
   },
   {
     title: "Jouw productinfo direct op het VVB-label",
