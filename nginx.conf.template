@@ -1,4 +1,3 @@
-
 events {}
 
 http {
@@ -6,45 +5,54 @@ http {
   include       /etc/nginx/mime.types;
   default_type  application/octet-stream;
 
+    # Server block for sync8.nl without SSL, redirecting to blueengine.nl over HTTPS
     server {
-        listen       80;
-        server_name  ${CERTBOT_DOMAIN};  # Modified to use variable
+        listen 80;
+        server_name sync8.nl www.sync8.nl;
+
+        location / {
+            return 301 https://blueengine.nl$request_uri;  # Redirect to blueengine.nl over HTTPS
+        }
+    }
+
+    # Server block for HTTP to HTTPS redirect using CERTBOT_DOMAIN
+    server {
+        listen 80;
+        server_name ${CERTBOT_DOMAIN};
 
         location / {
             return 301 https://$host$request_uri;
         }
 
         location /.well-known/acme-challenge/ {
-            root  /var/www/html;
+            root /var/www/html;
             try_files $uri =404;
         }
-
     }
 
- server {
-        listen              443 ssl;
-        server_name         ${CERTBOT_DOMAIN};  # Modified to use variable
-        ssl_certificate     /etc/letsencrypt/live/${CERTBOT_DOMAIN}/fullchain.pem;  # Assume certs are named after host
-        ssl_certificate_key /etc/letsencrypt/live/${CERTBOT_DOMAIN}/privkey.pem;  # Assume certs are named after host
+    # Server block for ${CERTBOT_DOMAIN} with SSL enabled
+    server {
+        listen 443 ssl;
+        server_name ${CERTBOT_DOMAIN};
+
+        ssl_certificate     /etc/letsencrypt/live/${CERTBOT_DOMAIN}/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/${CERTBOT_DOMAIN}/privkey.pem;
 
         location / {
-            root   /usr/share/nginx/html;
-            index  index.html index.htm;
+            root /usr/share/nginx/html;
+            index index.html index.htm;
             try_files $uri $uri/ /index.html;
         }
 
         location = /index.html {
-            root   /usr/share/nginx/html;
+            root /usr/share/nginx/html;
             expires -1;
             add_header Cache-Control "no-cache, no-store, must-revalidate";
         }
 
-        error_page   500 502 503 504  /50x.html;
+        error_page 500 502 503 504 /50x.html;
         location = /50x.html {
-            root   /usr/share/nginx/html;
+            root /usr/share/nginx/html;
         }
-
     }
-
-
 }
