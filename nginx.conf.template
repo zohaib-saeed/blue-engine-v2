@@ -15,6 +15,19 @@ http {
         }
     }
 
+    server {
+        listen 443 ssl;
+        server_name sync8.nl www.sync8.nl;
+
+        # Using the certificates for blueengine.nl
+        ssl_certificate     /etc/letsencrypt/live/sync8.nl/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/sync8.nl/privkey.pem;
+
+        location / {
+            return 301 https://blueengine.nl$request_uri;  # Redirect to blueengine.nl
+        }
+    }
+
     # Server block for HTTP to HTTPS redirect using CERTBOT_DOMAIN
     server {
         listen 80;
