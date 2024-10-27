@@ -12,31 +12,19 @@ const Hero = () => {
         {/* Col 1  */}
         <div className="w-full flex flex-col item-center justify-center gap-2 xs:gap-4 md:gap-5">
           <h2 className="text-white-main font-[800] text-3xl md:text-4xl lg:text-5xl">
-            Magazijnsoftware voor VVB en Non-VVBERs
+            Magazijnsoftware voor VVB en Non-VVB'ers
           </h2>
-          {/* <p className="text-base md:text-lg text-left text-white-mercury">
+          <p className="text-base md:text-lg text-left text-white-mercury">
             Ontwikkeld om het{" "}
             <span className="bg-white-main rounded-full px-[10px] font-bold text-sm md:text-base text-blue-700">
-              drukke leven
+              "drukke leven"
             </span>{" "}
-            van de bol.com partner te versimpelen. Met{" "}
+            van de bol.com partner te versimpelen. Met talloze features welke
+            jouw dagelijkse taken{" "}
             <span className="bg-white-main rounded-full px-[10px] font-bold text-sm md:text-base text-blue-700">
-              talloze functies
-            </span>{" "}
-            welke jouw dagelijkse taken{" "}
-            <span className="bg-white-main rounded-full px-[10px] font-bold text-sm md:text-base text-blue-700">
-              automatiseert
+              "automatiseert"
             </span>
-            , meer inzicht in je business, ondersteunende acties maakt, al die{" "}
-            <span className="bg-white-main rounded-full px-[10px] font-bold text-sm md:text-base text-blue-700">
-              vervelende retourtjes
-            </span>{" "}
-            verwerkt, prestatienormen bewaakt en nog veel meer!
-          </p> */}
-          <p className="text-base md:text-lg text-left text-white-mercury">
-            Ontwikkeld om het drukke leven van de bol.com partner te
-            versimpelen. Met talloze features welke jouw dagelijkse taken
-            automatiseert, kosten bespaart en prestatienormen bewaakt!
+            , kosten bespaart en prestatienormen bewaakt!
           </p>
           <Button
             color={getTailwindColor("white", "main")}

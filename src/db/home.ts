@@ -50,6 +50,6 @@ export const transparentPricingData = [
     price: "€ 40,00",
     subscriptionDetail: "Ex. BTW",
     subscriptionTime: "maand",
-    features: ["Tot 1000 orders p.m."],
+    features: ["Onbeperkt"],
   },
 ];
