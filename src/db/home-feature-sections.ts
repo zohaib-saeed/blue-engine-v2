@@ -43,64 +43,6 @@ export const homeFeaturesSectionsData = [
   },
   // ---------------------------
   {
-    heading: "Orderverwerking",
-    body: "Geoptimaliseerd voor partners die zelf verzenden.",
-    featurePageUrl: "/features/orderverwerking",
-    images: [
-      { src: "/images/home/orderverwerking/1.svg", alt: "Orderverwerking 1" },
-      { src: "/images/home/orderverwerking/2.svg", alt: "Orderverwerking 2" },
-      { src: "/images/home/orderverwerking/3.svg", alt: "Orderverwerking 3" },
-      { src: "/images/home/orderverwerking/4.svg", alt: "Orderverwerking 4" },
-      { src: "/images/home/orderverwerking/5.svg", alt: "Orderverwerking 5" },
-      { src: "/images/home/orderverwerking/6.svg", alt: "Orderverwerking 6" },
-    ],
-    tablistClass: generateUuid(),
-    mainTab: 1,
-    tabs: [
-      {
-        title: "Algemeen",
-        value: generateUuid(),
-        activeBullet: 2,
-        chips: ["Top"],
-        bullets: [
-          "Inzicht klant eerder heeft besteld",
-          "Direct mail",
-          "Bulk Mailen",
-          "Genereert picklist",
-          "Notities toevoegen",
-        ],
-      },
-      {
-        title: "VVB",
-        value: generateUuid(),
-        activeBullet: 0,
-        chips: ["Veelgebruikt"],
-
-        bullets: [
-          "Product + aantal direct op VVB label",
-          "Magazijnlocatie + losse notitie op het VVB label",
-          "Mogelijk om VVB orders nog te annuleren na bevestigen",
-          "Verzendregels voor brievenbus en pakket",
-          "Wachtrij voor orders met latere verzenddatum",
-        ],
-      },
-      {
-        title: "Non VVB",
-        value: generateUuid(),
-        activeBullet: 1,
-        chips: ["Besparend"],
-        bullets: [
-          "Copy Buttons voor aanmaken eigen labels",
-          "Notificatie Parcelshop klant voorkeur",
-          "Verzonden bestellingen per dagdeel",
-          "Non VVB wachtrij",
-          "Pre-label brievenbuspost",
-        ],
-      },
-    ],
-  },
-  // ---------------------------
-  {
     heading: "TrackingView",
     body: "Inzicht in de status van al jouw (VVB) pakketten.",
     featurePageUrl: "/features/tracking-view",

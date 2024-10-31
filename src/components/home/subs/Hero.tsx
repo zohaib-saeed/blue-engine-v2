@@ -17,14 +17,14 @@ const Hero = () => {
           <p className="text-base md:text-lg text-left text-white-mercury">
             Ontwikkeld om het{" "}
             <span className="bg-white-main rounded-full px-[10px] font-bold text-sm md:text-base text-blue-700">
-              "drukke leven"
+              drukke leven
             </span>{" "}
-            van de bol.com partner te versimpelen. Met talloze features welke
-            jouw dagelijkse taken{" "}
+            van de bol-verkoper te versimpelen. Met talloze tools welke jouw
+            dagelijkse taken{" "}
             <span className="bg-white-main rounded-full px-[10px] font-bold text-sm md:text-base text-blue-700">
-              "automatiseert"
+              automatiseert
             </span>
-            , kosten bespaart en prestatienormen bewaakt!
+            , kosten bespaard en prestatienormen bewaakt!
           </p>
           <Button
             color={getTailwindColor("white", "main")}
