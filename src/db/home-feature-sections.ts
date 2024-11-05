@@ -1,245 +1,225 @@
 import { v4 as generateUuid } from "uuid";
 import { genearteUuid } from "@/utils";
 
-export const homeFeaturesSectionsData = [
-  // ---------------------------
+const voorgesteldeFeature = {
+  heading: "Voorgestelde acties",
+  body: "Herkent situaties en automatiseert deze voor je.",
+  images: [
+    { src: "/images/home/voorgestelde/1.svg", alt: "Voorgestelde actie 1" },
+    { src: "/images/home/voorgestelde/2.svg", alt: "Voorgestelde actie 2" },
+  ],
+  featurePageUrl: "/features/voorgestelde-acties",
+  tablistClass: genearteUuid(),
+  mainTab: 0,
+  tabs: [
+    {
+      title: "Herkenning & Afhandeling",
+      value: generateUuid(),
+      activeBullet: 1,
+      chips: ["Nieuw"],
+      bullets: [
+        "Automatisch onderzoek starten",
+        "Controleert dubbele bestellingen",
+        "Afhandeling teruggestuurde pakketten & verkeerd ontvangen retouren",
+        "Afhandeling niet-afgehaalde pakketten parcelshop",
+        "Klantverzoeken tot afhaal pakket parcelshop en meer",
+      ],
+    },
+    {
+      title: "(R)LIM & Vergoedingen",
+      value: generateUuid(),
+      activeBullet: 2,
+      chips: ["Veelgebruikt"],
+      bullets: [
+        "LIM en RLIM overzicht",
+        "VVB toeslag controle",
+        "Geautomatiseerde vergoedings aanvragen bij Bol.com",
+        "Inzicht vergoedingsaanvragen",
+      ],
+    },
+  ],
+};
+
+const featuresData = [
+  //////////////
   {
-    heading: "Voorgestelde acties",
-    body: "Herkent situaties en automatiseert deze voor je.",
-    images: [
-      { src: "/images/home/voorgestelde/1.svg", alt: "Voorgestelde actie 1" },
-      { src: "/images/home/voorgestelde/2.svg", alt: "Voorgestelde actie 2" },
-    ],
-    featurePageUrl: "/features/voorgestelde-acties",
-    tablistClass: genearteUuid(),
-    mainTab: 0,
-    tabs: [
-      {
-        title: "Herkenning & Afhandeling",
-        value: generateUuid(),
-        activeBullet: 1,
-        chips: ["Nieuw"],
-        bullets: [
-          "Automatisch onderzoek starten",
-          "Controleert dubbele bestellingen",
-          "Afhandeling teruggestuurde pakketten & verkeerd ontvangen retouren",
-          "Afhandeling niet-afgehaalde pakketten parcelshop",
-          "Klantverzoeken tot afhaal pakket parcelshop en meer",
-        ],
-      },
-      {
-        title: "(R)LIM & Vergoedingen",
-        value: generateUuid(),
-        activeBullet: 2,
-        chips: ["Veelgebruikt"],
-        bullets: [
-          "LIM en RLIM overzicht",
-          "VVB toeslag controle",
-          "Geautomatiseerde vergoedings aanvragen bij Bol.com",
-          "Inzicht vergoedingsaanvragen",
-        ],
-      },
-    ],
+    title: "VVB Orderverwerking",
+    heading: "Binnen 10 seconde aan de slag met inpakken",
+    subText: "De snelste manier om je VVB-orders te verwerken.",
+    bullets: {
+      label: "In 1 klik:",
+      items: [
+        "VVB-orders voor vandaag",
+        "VVB-orders voor vandaag",
+        "Orders gesorteerd, bevestigd en samengevoegd in 1 PDF",
+        "Verzendinfo op het VVB label",
+        "Picklijst met hoeveel van elk artikel te verzenden",
+      ],
+    },
+    img: {
+      url: "/images/home/features/order-verwerking.svg",
+      className: "pb-[79%]",
+    },
+    tags: ["Foutloos inpakken", "Bespaar tijd", "Razendsnel"],
+    pageUrl: "",
   },
-  // ---------------------------
+  //////////////
   {
-    heading: "TrackingView",
-    body: "Inzicht in de status van al jouw (VVB) pakketten.",
-    featurePageUrl: "/features/tracking-view",
-    images: [
-      { src: "/images/home/trackingview/1.svg", alt: "TrackingView 1" },
-      { src: "/images/home/trackingview/2.svg", alt: "TrackingView 2" },
-      { src: "/images/home/trackingview/3.svg", alt: "TrackingView 3" },
-      { src: "/images/home/trackingview/4.svg", alt: "TrackingView 4" },
-      { src: "/images/home/trackingview/5.svg", alt: "TrackingView 5" },
+    title: "TrackingView",
+    heading: "Inzicht wanneer het misgaat met je VVB-orders",
+    subText: "Voorkom niet-afgehaald parcelshop en onterecht retour afzender",
+    bullets: {
+      label: "",
+      items: [
+        "In één oogopslag weten wat bij parcelshop ligt",
+        "Vraagt vergoeding aan bij onterecht terugstuur",
+        "Automatische herinnering afhaal-verzoek pakket ",
+        "Inzicht per dag in jouw zendingen",
+      ],
+    },
+    img: {
+      url: "/images/home/features/tracking-view.svg",
+      className: "pb-[65%]",
+    },
+    tags: [
+      "Voorkom onnodige retouren",
+      "Nastuur-zending aanmaken",
+      "Snelle actie-knoppen",
     ],
-    tablistClass: generateUuid(),
-    mainTab: 0,
-    tabs: [
-      {
-        title: "Algemeen",
-        value: generateUuid(),
-        activeBullet: 1,
-        chips: ["Nieuw"],
-        bullets: [
-          "Start geautomatiseerd onderzoek naar pakket",
-          "Teruggestuurde pakketten overzicht",
-          "Inzicht of (R)LIM is uitgekeerd",
-          "Supersnelle communicatie tussen vervoerder en jij",
-          "Makkelijk track 'n trace uploaden per dag",
-        ],
-      },
-      {
-        title: "Inzicht statussen",
-        value: generateUuid(),
-        activeBullet: 0,
-        chips: ["Core"],
-        bullets: [
-          "Inzicht welke pakketten bij parcelshop liggen",
-          "Notificaties als je vervoerder je pakket terugstuurt",
-          "Bestellingen blijven hangen",
-          "Overzicht welke pakketten teruggestuurd zijn zonder dat deze aangemeld zijn als retour",
-          "Een nastuur opdracht maken",
-        ],
-      },
-    ],
+    pageUrl: "",
   },
-  // ---------------------------------------------
+  //////////////
   {
-    heading: "Retourverwerking & scan-app ",
-    body: "Verminderen. Verhelpen. Snel verwerken.",
-    featurePageUrl: "/features/retourverwerking-and-scan-app",
-    images: [
-      { src: "/images/home/retourverwerking/1.svg", alt: "Retourverwerking 1" },
-      { src: "/images/home/retourverwerking/2.svg", alt: "Retourverwerking 2" },
-      { src: "/images/home/retourverwerking/3.svg", alt: "Retourverwerking 3" },
-    ],
-    tablistClass: generateUuid(),
-    mainTab: 2,
-    tabs: [
-      {
-        title: "Verwerking",
-        value: generateUuid(),
-        activeBullet: 2,
-        chips: ["Handig"],
-        bullets: [
-          "Retour accepteren met 1 klik",
-          "Retour op on-hold kunnen zetten",
-          "Nastuur-opdracht aanmaken",
-          "Retourmanagement",
-          "Uitgebreide retourrapportages",
-          "Retouropmerkingen toevoegen",
-        ],
-      },
-      {
-        title: "Statussen",
-        value: generateUuid(),
-        activeBullet: 1,
-        chips: ["Nieuw"],
-        bullets: [
-          "Overzicht verlopen retouren",
-          "Inzicht oplosbare en niet-oplosbare retouren",
-          "Melding wanneer buiten retourtermijn valt",
-          "Notificatie zelfde bestelling al vaker retour gemeld",
-        ],
-      },
-      {
-        title: "Scan-app",
-        value: generateUuid(),
-        activeBullet: 2,
-        chips: ["Veelgebruikt"],
-        bullets: [
-          "Retourpakket scannen via de barcode en verwerken met 1 klik",
-          "Foto's en/of notities bijvoegegn",
-          "Herkent retouren maar ook teruggestuurd of niet afgehaald.",
-          "Maakt terugstuur verzoek aan bij afkeuren retour",
-          "Automatisch vergoedingsaanvraag voor onterechte retour",
-          "Inzicht in welke retouren werkelijk ontvangen zijn",
-        ],
-      },
-    ],
+    title: "Retour",
+    heading: "Razendsnel retouren verwerken met de app",
+    subText:
+      "Retouren afhandelen kost veel tijd, sommige kijken er al niet meer naar om. Zonde! Want er gaat veel mis bij retouren en dat kost jouw geld.",
+    bullets: {
+      label: "Met 1 scan:",
+      items: [
+        "De retourreden en of deze op tijd retour is gemeld",
+        "Direct goedkeuren, afkeuren of on-hold zetten",
+        "Maak foto/notitie tijdens afkeuren en mail klant direct",
+        "Vraagt compensatie bij Bol.com voor onterechte retour",
+      ],
+    },
+    img: { url: "/images/home/features/retour.svg", className: "pb-[72%]" },
+    tags: ["Voorkom retourfraude", "Bespaar op retourkosten"],
+    pageUrl: "",
   },
-  // ---------------------------------------------
+  //////////////
   {
-    heading: "CaseHub",
-    body: "Klantvragen direct naar jouw eigen klantomgeving.",
-    featurePageUrl: "/features/casehub-and-klantvragen",
-    images: [
-      { src: "/images/home/casehub/1.svg", alt: "CaseHub 1" },
-      { src: "/images/home/casehub/2.svg", alt: "CaseHub 2" },
-      { src: "/images/home/casehub/3.svg", alt: "CaseHub 3" },
-    ],
-    tablistClass: generateUuid(),
-    mainTab: 0,
-    tabs: [
-      {
-        title: "Algemeen",
-        value: generateUuid(),
-        activeBullet: 1,
-        chips: ["Top"],
-        bullets: [
-          "Klanten kunnen direct reageren op jouw emails",
-          "Verminderd het aantal klantvragen in bol.com",
-          "Snelle afhandeling",
-          "Inzicht of klant email geopend heeft",
-        ],
-      },
-      {
-        title: "Campagnes",
-        value: generateUuid(),
-        activeBullet: 0,
-        chips: ["Gemak"],
-        bullets: [
-          "Kant n klare campagnes inclusief klik-buttons",
-          "Email analytics",
-          "Review campagnes opstellen",
-          "BulkMailen",
-        ],
-      },
-    ],
+    title: "Bol.com klantvragen",
+    heading: "Klantvragen afhandelen met de juiste toolkit",
+    subText: "Nooit meer een klantvraag te laat beantwoorden.",
+    bullets: {
+      label: "",
+      items: [
+        "Standaard ontvangstmail (altijd op tijd met reageren)",
+        "Snelle afhandel en zoekfuncties",
+        "1 klantvragenoverzicht voor al jouw winkels",
+        "Klantvragen makkelijk opslaan/groeperen voor later",
+      ],
+    },
+    img: {
+      url: "/images/home/features/klantvragen-bol.svg",
+      className: "pb-[70%]",
+    },
+    tags: ["Versnel dagelijkse processen ", "Bescherming prestatienormen"],
+    pageUrl: "",
   },
-  // ---------------------------------------------
+  //////////////
   {
-    heading: "Klantvragen bol.com (beta)",
-    body: "Al jouw klantvragen op 1 plek",
-    featurePageUrl: "/features/casehub-and-klantvragen",
-    images: [
-      { src: "/images/home/klantvragen/1.svg", alt: "Klantvragen Bol.com 1" },
-      { src: "/images/home/klantvragen/2.svg", alt: "Klantvragen Bol.com 2" },
-      { src: "/images/home/klantvragen/3.svg", alt: "Klantvragen Bol.com 3" },
+    title: "MeldingenBox",
+    heading: "Een extra oogje in het zeil",
+    subText:
+      "Houd toezicht op al jouw  dagelijkse processen zodat jij niet meer voor verassingen komt te staan en op tijd kunt ingrijpen.",
+    bullets: {
+      label: "",
+      items: [
+        "VVB-toeslagen",
+        "Verkopers onder jouw listing",
+        "Ontvangen compensaties Bol.com ",
+        "Voorgestelde mailtjes voor elk scenario (optie)",
+      ],
+    },
+    img: {
+      url: "/images/home/features/melding-box.svg",
+      className: "pb-[70%]",
+    },
+    tags: [
+      "Extra monitoring",
+      "Extra monitoring",
+      "Melding nieuwe productreviews",
     ],
-    tablistClass: generateUuid(),
-    mainTab: 0,
-    tabs: [
-      {
-        title: "Algemeen",
-        value: generateUuid(),
-        activeBullet: 4,
-        chips: ["Veelgebruikt"],
-        bullets: [
-          "Supersnel klantvragen beantwoorden",
-          "Maak vervolgacties aan voor klantvragen, zoals iets nasturen",
-          "Responsetimer",
-          "Geintegreerde communicatie tussen Bol, klant en vervoerder",
-          "Indeling email templates",
-        ],
-      },
-      {
-        title: "Prestatienormen",
-        value: generateUuid(),
-        activeBullet: 1,
-        chips: ["Top"],
-        bullets: [
-          "Houd rekening met jouw prestatienormen",
-          "Tracking of klantvragen binnen 24 uur vallen",
-        ],
-      },
-    ],
+    pageUrl: "",
   },
-  // ---------------------------------------------
+  //////////////
   {
-    heading: "Facturatie",
-    body: "Nu met gescheiden NL en BE omzet.",
-    featurePageUrl: "/features/facturatie",
-    mainTab: 0,
-    images: [
-      { src: "/images/home/facturatie/1.svg", alt: "Facturatie 1" },
-      { src: "/images/home/facturatie/2.svg", alt: "Facturatie 2" },
+    title: "MailCampagnes",
+    heading: "Creeer je eigen klantvragen",
+    subText:
+      "Laat klanten direct reageren op jouw campagnes. Scheelt weer een bol-vraag en jij bent sneller op de hoogte dan via het bol-contactformulier",
+    bullets: {
+      label: "",
+      items: [
+        "Eigen klantvragen afhandelen net zoals bol-vragen ",
+        "Kant ’n klare campagnes ",
+        "Gezondere prestatienormen",
+        "Vraag om eerlijke review terwijl je factuur verstuurd",
+      ],
+    },
+    img: {
+      url: "/images/home/features/mail-campagnes.svg",
+      className: "pb-[63%]",
+    },
+    tags: ["Direct contact", "Snellere afhandeling"],
+    pageUrl: "",
+  },
+  //////////////
+  {
+    title: "Facturatie",
+    heading: "Je bol-administratie zorgeloos op orde",
+    subText:
+      "Maakt klantfacturen aan en bundelt dit per bol-factuur. Zo klopt je administratie altijd en kun je probleemloos de bol-factuur blijven gebruiken van de Belastingdienst.",
+    bullets: {
+      label: "",
+      items: [
+        "Download maandelijks 1 PDF bundel per bol-factuur",
+        "Begin vanaf 1 januari 2023 of vanaf nu (optioneel)",
+        "Handmatig of automatisch facturen uploaden naar Bol.com",
+        "Overzicht zakelijke BE klanten per kwartaal voor BTW aangifte",
+      ],
+    },
+    img: { url: "/images/home/features/facturatie.svg", className: "pb-[65%]" },
+    tags: [
+      "Zakelijke BE klanten altijd 0% BTW factuur",
+      "Makkelijk overstappen",
     ],
-    tablistClass: generateUuid(),
-    tabs: [
-      {
-        title: "Facturen uploaden",
-        value: generateUuid(),
-        activeBullet: 2,
-        chips: ["Nieuw"],
-        bullets: [
-          "Facturen uploaden",
-          "Maakt facturen en uploadt deze automatisch naar Bol.com",
-          "Download jouw PDF facturen per maand in 1 bestand",
-          "Per maand de omzet voor NL en voor BE",
-        ],
-      },
-    ],
+    pageUrl: "",
+  },
+  //////////////
+  {
+    title: "",
+    heading: "Voorspelt wanneer je producten uitverkocht raken",
+    subText:
+      "Voorkom dat je geen voorraad hebt wanneer je sales ineens harder gaan dan gepland.",
+    bullets: {
+      label: "",
+      items: [
+        "Voorkom dat je geen voorraad hebt wanneer je sales ineens harder gaan dan gepland.",
+        "Houd je bol-voorraad boven de 500 tegen salestracking",
+        "Meerdere winkels met 1 voorraad systeem",
+        "Dagelijks up-to-date",
+      ],
+    },
+    img: {
+      url: "/images/home/features/voorraadbeheer.svg",
+      className: "pb-[69%]",
+    },
+    tags: ["Actuele voorraad", "Inkoopmeldingen"],
+    pageUrl: "",
   },
 ];
+
+export { voorgesteldeFeature, featuresData };

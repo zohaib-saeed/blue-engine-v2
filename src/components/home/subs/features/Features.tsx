@@ -1,7 +1,6 @@
-import { homeFeaturesSectionsData } from "@/db";
-import SharedFeatureSection from "./subs/SharedFeatureSection";
+import { featuresData } from "@/db/home-feature-sections";
 import ProposedActions from "./subs/ProposedActions";
-import Orderverwerking from "./subs/Orderverwerking";
+import SharedFeature from "./subs/SharedFeature";
 
 const Features = () => {
   return (
@@ -16,20 +15,8 @@ const Features = () => {
         </p>
       </div>
       {/* Sections  */}
-      <Orderverwerking />
-      {homeFeaturesSectionsData.slice(1).map((data, index) => (
-        <SharedFeatureSection
-          data={data}
-          key={index}
-          sectionClasses={
-            index % 2 === 0
-              ? "lg:grid-cols-[0.9fr_1.1fr]"
-              : "lg:grid-cols-[1.1fr_0.9fr]"
-          }
-          colOneClasses={index % 2 === 0 ? "lg:order-last" : "lg:order-first"}
-          colTwoClasses={index % 2 === 0 ? "lg:order-first" : "lg:order-last"}
-          colOneAlignment={index % 2 === 0 ? "right" : "left"}
-        />
+      {featuresData.map((feature, index) => (
+        <SharedFeature key={index} feature={feature} />
       ))}
       <ProposedActions />
       {/* CTA  */}

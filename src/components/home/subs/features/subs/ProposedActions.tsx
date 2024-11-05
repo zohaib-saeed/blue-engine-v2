@@ -2,13 +2,13 @@ import { useState, useEffect, useRef } from "react";
 import { Tabs, Timeline } from "@mantine/core";
 import { useId } from "@mantine/hooks";
 import { BsArrowRight as IconArrowRight } from "react-icons/bs";
-import { homeFeaturesSectionsData } from "@/db";
 import { cn } from "@/utils";
 import StackedCarousel from "./StackedCarousel";
+import { voorgesteldeFeature } from "@/db/home-feature-sections";
 
 const ProposedActions = () => {
   // Tabs Data
-  const data = homeFeaturesSectionsData[0];
+  const data = voorgesteldeFeature;
 
   // Generates random ID
   const id = useId();
