@@ -3,6 +3,7 @@ import ProposedActions from "./subs/ProposedActions";
 import SharedFeature from "./subs/SharedFeature";
 
 const Features = () => {
+  console.log("test");
   return (
     <section className="w-full max-w-screen-sxl flex flex-col items-center justify-start gap-12 py-12 px-4">
       {/* Headings  */}
